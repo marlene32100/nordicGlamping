@@ -1,0 +1,41 @@
+ *{
+     font-size: 10px;
+ }
+
+ body{
+     margin: 0;
+     padding: 0;
+ }
+
+ #landingPage{
+     min-width: 100vw;
+     min-height: 100vh;
+ }
+
+ #videoBackground{
+     position: fixed;
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     z-index: -1;
+ }
+
+ #homePageText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .websiteName{
+     font-family: sans-serif;
+ }
+
+ .title{
+     font-size: 3rem;
+ }
+
+ .subtitle {
+     font-size: 2rem;
+ }
