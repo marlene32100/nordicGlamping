@@ -11,22 +11,45 @@
 
 /*---------------------------------------------------------------Typography--*/
   .websiteName{
-    color: gray;
     font-weight: 200;
  }
  
  .title{
-     font-size: 7rem;
-     font-family: "Nunito Sans";
+     font-size: 8rem;
+     font-family: "Nunito Sans", sans-serif;
      text-transform: uppercase;
      display: block;
  }
 
  .subtitle {
      font-size: 2rem;
-     font-family: "Montserrat";
+     font-family: "Montserrat", sans-serif;
      display: block;
+     letter-spacing: 1rem;
  }
+
+ .heading-title{
+     font-family: "Nunito Sans", sans-serif;
+     font-size: 5rem;
+     text-transform: uppercase;
+     font-weight: 200;
+ }
+
+ .text-section{
+     font-family: "Montserrat", sans-serif;
+     font-size: 2rem;
+     font-weight: 200;
+ }
+
+ /*---------------------------------------------------------------Color palette--*/
+
+   .websiteName{
+    color: #e9e6e6;
+   }
+
+   .heading-title{
+    color: #033646;
+   }
 
 /*---------------------------------------------------------------Landing Page--*/
 
@@ -49,7 +72,7 @@
 .overlay{
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
     z-index: 1;
     position: fixed;
     margin: 0;
@@ -57,10 +80,51 @@
 }
 
  #homePageText{
-     display: flex;
+    display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    top: 45vh;
+    height: 100vh;
+    flex-flow: column wrap;
  }
 
+/*---------------------------------------------------------------Information Section--*/
+
+.section-area{
+    width: 100vw;
+    height: 100rem;
+    margin: 0;
+    padding: 9rem 0;
+    background-color: #e9e6e6;
+    z-index: 2;
+    position: relative;
+}
+
+.heading-title{
+    text-align: center;
+    margin-top: 0;
+}
+
+.section-row{
+    height: 50rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.section-column{
+  height: 50rem;
+}
+
+.image-container{
+    height: 50rem;
+    overflow: hidden;
+}
+
+.image-section{
+    object-fit: cover;
+}
+
+.text-section{
+    margin: 2rem;
+}
