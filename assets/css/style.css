@@ -1,5 +1,8 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
  
+ html{
+     scroll-behavior: smooth;
+ }
  *{
      font-size: 10px;
  }
@@ -7,6 +10,15 @@
  body{
      margin: 0;
      padding: 0;
+ }
+
+ .icon-scroll{
+     text-align: center;
+     color: #304e42;
+     font-size: 2rem;
+     margin-top: 3rem;
+     margin-left: 49vw;
+     text-decoration: none;
  }
 
 /*---------------------------------------------------------------Typography--*/
@@ -91,8 +103,6 @@
 /*---------------------------------------------------------------Information Section--*/
 
 .section-area{
-    width: 100vw;
-    height: 100rem;
     margin: 0;
     padding: 9rem 0;
     background-color: #e9e6e6;
@@ -108,23 +118,47 @@
 .section-row{
     height: 50rem;
     width: 100%;
-    margin: 0;
+    margin: 5rem 0;
     padding: 0;
 }
 
 .section-column{
   height: 50rem;
+  overflow: hidden;
 }
 
 .image-container{
     height: 50rem;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .image-section{
     object-fit: cover;
+    width: 100%;
 }
 
 .text-section{
     margin: 2rem;
+}
+
+/*---------------------------------------------------------------Map--*/
+div#map{
+    height: 50rem;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/*---------------------------------------------------------------Recommended by--*/
+
+.image-recommended{
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.row-recommended, .column-recommended{
+    height: 35rem;
 }

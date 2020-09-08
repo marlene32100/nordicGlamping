@@ -1,44 +1,232 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-<title>Nordic Glamping</title>
-</head>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Nordic Glamping</title>
+  </head>
 
-<body>
-<!--Landing page-->
-<div id="landingPage">
-<video playsinline autoplay muted loop id="videoBackground">
-<source src="assets/video/forest.mp4" type="video/mp4">
-</video>
-<div class="overlay">
-<div id="homePageText">
-<h1 class="websiteName title">Nordic Glamping</h1>
-<h3 class="websiteName subtitle">-explore the silence-</h3>
-</div>
-</div>
-</div>
+  <body>
+    <!--Landing page-->
+    <div id="landingPage">
+      <video playsinline autoplay muted loop id="videoBackground">
+        <source src="assets/video/forest.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay">
+        <div id="homePageText">
+          <h1 class="websiteName title">Nordic Glamping</h1>
+          <h3 class="websiteName subtitle">-explore the silence-</h3>
+        </div>
+      </div>
+      <a href="#information-section" class="fa fa-chevron-down icon-scroll"></a>
+    </div>
 
-<!--Information area-->
-<section class="section-area">
-	<h2 class="heading-title">Title here</h2>
-	<div class="container-fluid">
-		<div class="row no-gutters section-row">
-			<div class="col-8 section-column">
-				<div class="image-container">
-					<img src="assets/images/cabin.jpg" alt="arctic dome in Rannalla, Finland" class="image-section" />
-</div>
-				</div>
-				<div class="col-4">
-					<article class="article-column">
-                    <p class="text-section">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </p>
-                    </article>
-				</div>
-			</div>
-		</div>
-</section>
-</body>
+    <!--Information area-->
+    <section class="section-area" id="information-section">
+      <h2 class="heading-title">Luxury in solitude</h2>
+      <div class="container-fluid">
+        <div class="row section-row">
+          <div class="col-sm-12 col-md-6 col-lg-6 section-column">
+            <article class="article-column">
+              <p class="text-section">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+            </article>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-6 section-column">
+            <div class="image-container">
+              <img
+                src="assets/images/cabin.jpg"
+                alt="arctic dome in Rannalla, Finland"
+                class="image-section"
+              />
+            </div>
+          </div>
+        </div>
+        <a href="#map-section" class="fa fa-chevron-down icon-scroll"></a>
+      </div>
+    </section>
+
+    <!--Map area-->
+
+    <section class="section-area" id="map-section">
+      <h2 class="heading-title">Our locations</h2>
+
+      <div class="container-fluid">
+        <div class="row section-row">
+          <div class="col-sm-12 col-md-6 col-lg-8 section-column">
+            <div id="map"></div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 section-column">
+            <article class="article-column">
+              <p class="text-section">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+            </article>
+          </div>
+        </div>
+        <a
+          href="#recommended-section"
+          class="fa fa-chevron-down icon-scroll"
+        ></a>
+      </div>
+    </section>
+
+    <!--Recommended by-->
+
+    <section class="section-area" id="recommended-section">
+      <h2 class="heading-title">Recommended by</h2>
+      <div class="container-fluid">
+        <div class="row section-row row-recommended">
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 section-column column-recommended"
+          >
+            <article class="article-column">
+              <p class="text-section">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat."
+              </p>
+            </article>
+          </div>
+
+          <div
+            class="col-sm-12 col-md-6 col-lg-8 section-column column-recommended"
+          >
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="assets/images/logo/elite.jpg"
+                  alt="Elite logo"
+                  class="image-recommended"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="assets/images/logo/forbes.png"
+                  alt="Forbes logo"
+                  class="image-recommended"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="assets/images/logo/luxos.png"
+                  alt="Luxos logo"
+                  class="image-recommended"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row section-row row-recommended">
+          <div
+            class="col-sm-12 col-md-6 col-lg-8 section-column column-recommended"
+          >
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="assets/images/logo/elite.jpg"
+                  alt="Elite logo"
+                  class="image-recommended"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="assets/images/logo/forbes.png"
+                  alt="Forbes logo"
+                  class="image-recommended"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="assets/images/logo/luxos.png"
+                  alt="Luxos logo"
+                  class="image-recommended"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 section-column column-recommended"
+          >
+            <article class="article-column">
+              <p class="text-section">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat."
+              </p>
+            </article>
+          </div>
+        </div>
+        <a href="" class="fa fa-chevron-down icon-scroll"></a>
+      </div>
+    </section>
+
+    <!--Contact-->
+
+    <section class="section-area">
+      <h2 class="heading-title">Contact us</h2>
+      <div class="container-fluid">
+        <div class="row section-row">
+          <div class="col-sm-12 col-md-6 col-lg-8 section-column">
+            <article class="article-column">
+              <p class="text-section">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat."
+              </p>
+            </article>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 section-column">
+            <div class="image-container">
+              <img
+                src="assets/images/cabin.jpg"
+                alt="arctic dome in Rannalla, Finland"
+                class="image-section"
+              />
+            </div>
+          </div>
+        </div>
+        <a href="" class="fa fa-chevron-up icon-scroll"></a>
+      </div>
+    </section>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgCbJ3jwxFficfWpQdVOT3S3mgGK9dgU0&callback=initMap"
+      type="text/javascript"
+    ></script>
+    <script src="assets/js/map.js"></script>
+  </body>
 </html>
