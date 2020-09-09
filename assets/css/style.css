@@ -22,6 +22,29 @@
      text-decoration: none;
  }
 
+ .icon-scroll:hover{
+     text-decoration: none;
+     color: #79b89f;
+ }
+
+.icon-scroll:hover::before{
+     content: "scroll";
+     font-family: "Nunito Sans", sans-serif;
+     font-size: 1rem;
+     text-transform: uppercase;
+     font-weight: 200;
+     padding-right: 1rem;
+ }
+
+ .icon-scroll:hover::after{
+     content: "down";
+     font-family: "Nunito Sans", sans-serif;
+     font-size: 1rem;
+     text-transform: uppercase;
+     font-weight: 200;
+     padding-left: 1rem;
+ }
+
 /*---------------------------------------------------------------Typography--*/
 
   .websiteName{
@@ -105,11 +128,15 @@
     flex-flow: column wrap;
  }
 
+ .icon-landing{
+     bottom: 10rem;
+ }
+
 /*---------------------------------------------------------------Information Section--*/
 
 .section-area{
     margin: 0;
-    padding: 9rem 0;
+    padding: 9rem 0 0 0;
     background-color: #e9e6e6;
     z-index: 2;
     position: relative;
@@ -162,6 +189,69 @@ div#map{
   border-radius: 50%;
   margin: auto;
 }
+
+/*---------------------------------------------------------------Contact--*/
+
+.icon-last:hover::before{
+     content: "to the";
+     font-family: "Nunito Sans", sans-serif;
+     font-size: 1rem;
+     text-transform: uppercase;
+     font-weight: 200;
+}
+
+.icon-last:hover::after{
+     content: "top";
+     font-family: "Nunito Sans", sans-serif;
+     font-size: 1rem;
+     text-transform: uppercase;
+     font-weight: 200;
+     padding-left: 1rem;
+}
+
+.form-check{
+    display: inline-block;
+    margin: 0 2rem 2rem 0;
+
+}
+.contact-form{
+    width: 50rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #033646;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.form-column{
+    text-align: center;
+}
+
+label{
+    margin-top: 1rem;
+    line-height: 2rem;
+    font-size: 2rem;
+}
+
+input{
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+textarea{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+::placeholder{
+    letter-spacing: .5rem;
+    font-size: 1.5rem;
+}
+
 
 
 /*---------------------------------------------------------------Media Queries--*/
