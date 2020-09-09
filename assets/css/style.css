@@ -113,10 +113,11 @@
     background-color: #e9e6e6;
     z-index: 2;
     position: relative;
+    text-align: center;
 }
 
 .heading-title{
-    text-align: center;
+    
     margin-top: 0;
 }
 
@@ -164,7 +165,7 @@ div#map{
 
 
 /*---------------------------------------------------------------Media Queries--*/
-@media screen and (min-width: 280px) {
+@media screen and (max-width: 374px) {
     .title {
         font-size: 5rem;
         text-align: center;
@@ -175,7 +176,7 @@ div#map{
     }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 767px) {
     .title {
         font-size: 5rem;
         text-align: center;
@@ -183,5 +184,14 @@ div#map{
     .subtitle {
         font-size: 1.5 rem;
         text-align: center;
+    }
+    
+    .logo-small-screen{
+    text-align: center;
+    margin-top: 1.5rem;
+    }
+
+    .recommended-row-small-screen{
+        margin-top: 1.5rem;
     }
 }
