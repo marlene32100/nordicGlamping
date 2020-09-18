@@ -30,18 +30,18 @@
           <h1 class="websiteName title">Nordic Glamping</h1>
           <h3 class="websiteName subtitle">-explore the silence-</h3>
         </div>
-        <a href="#information-section" class="fa fa-chevron-down icon-scroll icon-landing"></a>
+        
       </div>
     </div>
 
     <!--Information area-->
     <section class="section-area" id="information-section">
-      <h2 class="heading-title">Luxury in solitude</h2>
+      <h2 class="heading-title fadeIn">Luxury in solitude</h2>
       <div class="container-fluid">
         <div class="row section-row">
           <div class="col-sm-12 col-lg-6 section-column">
             <article class="article-column">
-              <p class="text-section">
+              <p class="text-section fadeIn">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -58,7 +58,7 @@
               <img
                 src="assets/images/cabin.jpg"
                 alt="arctic dome in Rannalla, Finland"
-                class="image-section"
+                class="image-section fadeIn"
               />
             </div>
           </div>
@@ -70,7 +70,7 @@
     <!--Map area-->
 
     <section class="section-area" id="map-section">
-      <h2 class="heading-title">Our locations</h2>
+      <h2 class="heading-title fadeIn">Our locations</h2>
 
       <div class="container-fluid">
         <div class="row section-row">
@@ -80,7 +80,7 @@
 
           <div class="col-sm-12 col-lg-4 section-column">
             <article class="article-column">
-              <p class="text-section">
+              <p class="text-section fadeIn">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -102,14 +102,14 @@
     <!--Recommended by-->
 
     <section class="section-area" id="recommended-section">
-      <h2 class="heading-title">Recommended by</h2>
+      <h2 class="heading-title fadeIn">Recommended by</h2>
       <div class="container-fluid">
         <div class="row section-row recommended-row">
           <div
             class="col-sm-12 col-lg-4 section-column"
           >
             <article class="article-column">
-              <p class="text-section">
+              <p class="text-section fadeIn">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -118,7 +118,7 @@
             </article>
           </div>
           
-          <div class="col-sm-12 col-lg-8 section-column">
+          <div class="col-sm-12 col-lg-8 section-column fadeIn">
             <div class="row">
               <div class="col-sm-12 col-md-4 logo-small-screen">
                 <img
@@ -147,7 +147,7 @@
 
         <div class="row section-row recommended-row recommended-row-small-screen">
           <div
-            class="col-sm-12 col-lg-8 section-column"
+            class="col-sm-12 col-lg-8 section-column fadeIn"
           >
             <div class="row">
               <div class="col-sm-12 col-md-4 logo-small-screen">
@@ -176,7 +176,7 @@
 
           <div class="col-sm-12 col-lg-4 section-column">
             <article class="article-column">
-              <p class="text-section">
+              <p class="text-section fadeIn">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -192,16 +192,16 @@
     <!--Contact-->
 
     <section class="section-area" id="contact-section">
-      <h2 class="heading-title">Contact us</h2>
+      <h2 class="heading-title fadeIn">Contact us</h2>
       <div class="container-fluid">
 <div class="row section-row">
 <div class="col-12">
-                 <p class="text-section">For a tailored experience and the highest level of luxury, please contact us.<br> We will plan a special holiday only for you, according to your desires.</p>
+                 <p class="text-section fadeIn">For a tailored experience and the highest level of luxury, please contact us.<br> We will plan a special holiday only for you, according to your desires.</p>
 </div>
 </div>
         <div class="row section-row">
           <div class="col-sm-12 col-md-6 col-lg-8 section-column form-column">
-            <form class="contact-form">
+            <form class="contact-form fadeIn">
   
   <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="mr">
@@ -242,17 +242,22 @@
             </div>
           </div>
         </div>
-        <a href="#information-section" class="fa fa-chevron-up icon-scroll icon-last"></a>
+ <!-- <a href="#information-section" class="fa fa-chevron-up icon-scroll icon-last"></a> -->
       </div>
     </section>
     <footer>
     </footer>
-    <script src="assets/js/map.js"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    
     <script
       async
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgCbJ3jwxFficfWpQdVOT3S3mgGK9dgU0&callback=initMap"
       type="text/javascript"
     ></script>
+
+    <script defer src="assets/js/animation.js"></script>
+    <script defer src="assets/js/map.js"></script>
   </body>
 </html>
