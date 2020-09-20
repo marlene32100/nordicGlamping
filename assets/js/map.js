@@ -76,8 +76,7 @@ function initMap() {
             map: map
         });
 
-        console.log(locations[i].title)
-        let contentString = "<h4>" + locations[i].title + "</h4>";
+        let contentString = "<h4>"+locations[i].title+"</h4>";
         let infowindow = new google.maps.InfoWindow({
             content: contentString,
             maxWidth: 400
@@ -87,9 +86,4 @@ function initMap() {
             infowindow.open(map, marker);
         });
     }
-
-
-
-
-
         }

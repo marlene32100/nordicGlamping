@@ -81,6 +81,15 @@
      font-weight: 200;
  }
 
+ .link-section, .address{
+     font-family: "Montserrat", sans-serif;
+     font-size: 1.5rem;
+     font-weight: 200;
+ }
+
+.footer-title {
+    font-size: 3rem;
+}
  /*---------------------------------------------------------------Color palette--*/
 
    .websiteName{
@@ -90,6 +99,15 @@
    .heading-title{
     color: #033646;
    }
+
+    .link-section{
+     color: #033646;
+ }
+
+ .footer-title {
+     color: #304e42;
+ }
+
 
 /*---------------------------------------------------------------Landing Page--*/
 
@@ -130,6 +148,13 @@
 
  .icon-landing{
      bottom: 10rem;
+ }
+
+ a.subtitle:hover, a.subtitle:active{
+     text-decoration: none;
+     font-weight: 400;
+     color: #79b89f;
+     font-size: 2.5rem;
  }
 
 /*---------------------------------------------------------------Information Section--*/
@@ -225,6 +250,7 @@ div#map{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+    margin-bottom: 3rem;
 }
 
 .form-column{
@@ -252,7 +278,37 @@ textarea{
     font-size: 1.5rem;
 }
 
+#contact-section {
+  margin-bottom: 0;
+  padding-bottom: 3rem;
+}
 
+/*---------------------------------------------------------------Footer--*/
+
+#footer {
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+}
+
+.link-section{
+  text-decoration: none;
+}
+
+.link-section:hover, .link-section:active{
+    text-decoration: none;
+    color: #304e42;
+    font-weight: 400;
+}
+
+a.icon{
+    color: #033646;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+a.icon:hover, a.icon:active {
+    color: #304e42;
+}
 
 /*---------------------------------------------------------------Media Queries--*/
 @media screen and (max-width: 374px) {
