@@ -127,23 +127,51 @@
 li a.link-item{
     font-family: "Nunito Sans", sans-serif;
     color: #e9e6e6;
-    font-size: 8rem;
+    font-size: 4rem;
     text-transform: uppercase;
     margin: 0;
     
 }
 
 .navbar-custom{
-  z-index: 6;
+  z-index: 4;
   position: fixed;
   width: 4rem;
   background-color: white;
   height: 100vh; 
 }
 
+.navbar-custom-small{
+    z-index: 4;
+    position:fixed;
+    height: 4rem;
+    width: 100vw;
+    background-color: #e9e6e6;
+    display: flex;
+    justify-content: right;
+}
+
+#dots-container{
+    width: 74rem;
+    height: 1rem;
+}
+
+#dots-container a:hover {
+    text-decoration: none;
+}
+
+span.dot{
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid #e9e6e6;
+    background-color: #95A5A6;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 .close-icon{
     color: #e9e6e6;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 a#navbarMenuLink {
@@ -315,17 +343,17 @@ label{
     font-size: 2rem;
 }
 
-input{
+input.form-control{
     height: 3rem;
     font-size: 1.5rem;
 }
 
-textarea{
+textarea#message{
     font-size: 1.5rem;
     line-height: 2rem;
 }
 
-::placeholder{
+*::placeholder{ 
     letter-spacing: .5rem;
     font-size: 1.5rem;
 }
@@ -363,15 +391,21 @@ a.icon:hover, a.icon:active {
 }
 
 /*---------------------------------------------------------------Media Queries--*/
-@media screen and (max-width: 374px) {
-    .title {
-        font-size: 5rem;
-        text-align: center;
+@media screen and (min-width: 1023px)
+  li a.link-item {
+        font-size: 8rem;
     }
-    .subtitle {
-        font-size: 1 rem;
-        text-align: center;
+
+    .close-icon{
+        font-size: 4rem;
     }
+}
+
+@media screen and (max-width: 1023px){
+    .title{
+        font-size: 6rem;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -394,6 +428,28 @@ a.icon:hover, a.icon:active {
     }
 }
 
+@media screen and (max-width: 374px) {
+    .title {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .subtitle {
+        font-size: 1 rem;
+        text-align: center;
+    }
+
+    .text-section{
+        font-size: 1.5rem;
+    }
+
+    .heading-title{
+        font-size: 3rem
+    }
+
+    label{
+        font-size: 1.5rem;
+    }
+}
 
 /*---------------------------------------------------------------Testing!!!!--*/
 .fadeIn {

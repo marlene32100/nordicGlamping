@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+   $("#dots-container").click(function(){
+       $("#menu-expanded").css("visibility", "visible");
+   });
+
    $("#navbarMenuLink").click(function(){
        $("#menu-expanded").css("visibility", "visible");
    });
