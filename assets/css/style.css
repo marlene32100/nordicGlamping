@@ -111,15 +111,36 @@
 
 
 /*---------------------------------------------------------------Menu--*/
+.menu-expanded{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+li a.link-item{
+    font-family: "Nunito Sans", sans-serif;
+    color: #e9e6e6;
+    font-size: 8rem;
+    text-transform: uppercase;
+    margin: 0;
+    
+}
+
 .navbar-custom{
-  z-index: 5;
+  z-index: 6;
   position: fixed;
   width: 4rem;
   background-color: white;
   height: 100vh; 
 }
 
-a#navbarDropdownMenuLink {
+a#navbarMenuLink {
     font-family: "Nunito Sans", sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -128,6 +149,7 @@ a#navbarDropdownMenuLink {
 text-orientation: upright;
 margin-top: 1rem;
 font-weight: 600;
+padding: 0;
 }
 /*---------------------------------------------------------------Landing Page--*/
 
