@@ -120,6 +120,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     visibility: hidden;
 }
 
@@ -138,6 +139,11 @@ li a.link-item{
   width: 4rem;
   background-color: white;
   height: 100vh; 
+}
+
+.close-icon{
+    color: #e9e6e6;
+    font-size: 5rem;
 }
 
 a#navbarMenuLink {
