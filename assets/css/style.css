@@ -50,6 +50,7 @@
   .websiteName{
     font-weight: 200;
  }
+
  
  .title{
      font-size: 8rem;
@@ -109,6 +110,25 @@
  }
 
 
+/*---------------------------------------------------------------Menu--*/
+.navbar-custom{
+  z-index: 5;
+  position: fixed;
+  width: 4rem;
+  background-color: white;
+  height: 100vh; 
+}
+
+a#navbarDropdownMenuLink {
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #033646;
+    writing-mode: vertical-rl;
+text-orientation: upright;
+margin-top: 1rem;
+font-weight: 600;
+}
 /*---------------------------------------------------------------Landing Page--*/
 
  #landingPage{
@@ -155,6 +175,10 @@
      font-weight: 400;
      color: #79b89f;
      font-size: 2.5rem;
+ }
+
+ h1.websiteName{
+     border: 0.5rem solid #e9e6e6;
  }
 
 /*---------------------------------------------------------------Information Section--*/
@@ -270,7 +294,7 @@ input{
 
 textarea{
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 ::placeholder{
