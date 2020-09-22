@@ -391,7 +391,7 @@ a.icon:hover, a.icon:active {
 }
 
 /*---------------------------------------------------------------Media Queries--*/
-@media screen and (min-width: 1023px)
+@media screen and (min-width: 1023px){
   li a.link-item {
         font-size: 8rem;
     }

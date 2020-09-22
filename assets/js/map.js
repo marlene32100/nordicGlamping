@@ -1,10 +1,10 @@
 function initMap() {
         
             var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
+                zoom: 3,
                 center: {
-                    lat: 56.638488,
-                    lng: 5.571360
+                    lat: 63.850504,
+                    lng: 0.179492
                 },
             });
 
@@ -76,14 +76,24 @@ function initMap() {
             map: map
         });
 
-        let contentString = "<h4>"+locations[i].title+"</h4>";
+        let contentString = "<h3>"+locations[i].title+"</h3>";
         let infowindow = new google.maps.InfoWindow({
             content: contentString,
             maxWidth: 400
         });
 
         marker.addListener("click", () => {
+        
+            if (infowindow) {
+                infowindow.close();
+            }
             infowindow.open(map, marker);
         });
+
+        map.addListener("click", () => {
+            if (infowindow) {
+                infowindow.close();
+            }
+        })
     }
         }
