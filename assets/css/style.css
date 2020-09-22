@@ -72,8 +72,14 @@
      font-family: "Nunito Sans", sans-serif;
      font-size: 5rem;
      text-transform: uppercase;
-     font-weight: 200;
-     
+     font-weight: 200; 
+ }
+
+ .map-title{
+     font-family: "Nunito Sans", sans-serif;
+     font-size: 2rem;
+     text-transform: uppercase;
+     font-weight: 200; 
  }
 
  .text-section{

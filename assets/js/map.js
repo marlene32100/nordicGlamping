@@ -12,61 +12,71 @@ function initMap() {
         {
         title:"Island Lodge",
         position: {lat: 59.370024, lng:18.379133},
-        map: map
+        map: map,
+        image: "assets/images/islandlodge.jpg"
         },
 
         {
         title: "Ice Hotel",
         position: {lat: 67.858899, lng: 20.527139},
-        map: map
+        map: map,
+        image: "assets/images/ice.jpg"
         },
 
         {
         title:"Tree Hotel",
         position: {lat: 66.072939, lng: 20.981868},
-        map: map
+        map: map,
+        image: "assets/images/treehotel.jpg"
         },
 
         {
         title:"Narvik Adventures",
         position: {lat: 68.430937, lng:17.436482},
-        map: map
+        map: map,
+        image: "assets/images/narvik.jpg"
         },
 
         {
-        title: "Aurora Glamping Jaris",
+        title: "Aurora Glamping Jeris",
         position: {lat: 67.952358, lng: 23.925108},
-        map: map
+        map: map,
+        image: "assets/images/jeris.jpg"
         },
 
         {
-        title:"Torassieppi accomodation",
+        title:"Torassieppi Jerisjärvi",
         position: {lat: 67.952380, lng: 23.925098},
-        map: map
+        map: map,
+        image: "assets/images/torassieppi.jpg"
         },
 
         {
         title:"Kakslauttanen Igloo",
         position: {lat: 68.334263, lng:27.334750},
-        map: map
+        map: map,
+        image: "assets/images/kakslauttanen.jpg"
         },
 
         {
         title: "Levin Igloo",
         position: {lat: 67.787191, lng: 24.891061},
-        map: map
+        map: map,
+        image: "assets/images/levin.jpg"
         },
 
         {
         title:"Reykjaviks Domes",
         position: {lat: 64.146665, lng:  -21.809352},
-        map: map
+        map: map,
+        image: "assets/images/domes.jpg"
         },
 
         {
-        title:"Sky sighting Iglúhús",
-        position: {lat: 65.944634, lng:  -18.326419},
-        map: map
+        title:"Buubble",
+        position: {lat: 64.165032, lng: -20.501192},
+        map: map,
+        image: "assets/images/buubble.jpg"
         }
         ]
 
@@ -76,7 +86,9 @@ function initMap() {
             map: map
         });
 
-        let contentString = "<h3>"+locations[i].title+"</h3>";
+        let contentString = '<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[i].image+'" alt="Card image cap">'
+  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[i].title+'</h1>'+'</div>'+'</div>';
+
         let infowindow = new google.maps.InfoWindow({
             content: contentString,
             maxWidth: 400
