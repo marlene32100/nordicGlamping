@@ -18,7 +18,7 @@
      text-align: center;
      color: #304e42;
      font-size: 2rem;
-     margin-top: 3rem auto;
+     margin-top: 3rem;
      text-decoration: none;
  }
 
@@ -91,11 +91,20 @@
  .link-section, .address{
      font-family: "Montserrat", sans-serif;
      font-size: 1.5rem;
-     font-weight: 200;
+     font-weight: 400;
  }
 
 .footer-title {
     font-size: 3rem;
+}
+
+.footer-text{
+    font-weight: 400;
+}
+
+small {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
 }
  /*---------------------------------------------------------------Color palette--*/
 
@@ -112,7 +121,11 @@
  }
 
  .footer-title {
-     color: #304e42;
+     color: #033646;
+ }
+
+ .social{
+     color: #033646;
  }
 
 
@@ -190,6 +203,10 @@ text-orientation: upright;
 margin-top: 1rem;
 font-weight: 600;
 padding: 0;
+}
+
+a#navbarMenuLink:hover{
+    color: #79b89f;
 }
 /*---------------------------------------------------------------Landing Page--*/
 
@@ -317,7 +334,6 @@ div#map{
      font-size: 1rem;
      text-transform: uppercase;
      font-weight: 200;
-     padding-left: 1rem;
 }
 
 .form-check{
@@ -347,11 +363,16 @@ label{
     margin-top: 1rem;
     line-height: 2rem;
     font-size: 2rem;
+    padding-left: 1rem;
 }
 
 input.form-control{
     height: 3rem;
     font-size: 1.5rem;
+}
+
+.form-check-input{
+    margin-top: 1rem;
 }
 
 textarea#message{
@@ -392,8 +413,23 @@ a.icon{
     padding: 1rem;
 }
 
-a.icon:hover, a.icon:active {
-    color: #304e42;
+a.icon:hover, a.icon:active, span.link-section:hover, span.link-section:active {
+    color: #79b89f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+span.link-section{
+    padding-left: 1rem;
+}
+
+.social{
+    padding-right: 1rem;
+}
+
+.social:hover, .social:active{
+    color: #79b89f;
+    text-decoration: none;
 }
 
 /*---------------------------------------------------------------Media Queries--*/
@@ -420,7 +456,7 @@ a.icon:hover, a.icon:active {
         text-align: center;
     }
     .subtitle {
-        font-size: 1.5 rem;
+        font-size: 1.5rem;
         text-align: center;
     }
     
@@ -440,7 +476,7 @@ a.icon:hover, a.icon:active {
         text-align: center;
     }
     .subtitle {
-        font-size: 1 rem;
+        font-size: 1rem;
         text-align: center;
     }
 
