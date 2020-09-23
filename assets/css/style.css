@@ -45,6 +45,10 @@
      padding-left: 1rem;
  }
 
+ .fadeIn {
+    display: none;
+}
+
 /*---------------------------------------------------------------Typography--*/
 
   .websiteName{
@@ -492,8 +496,4 @@ span.link-section{
         font-size: 1.5rem;
     }
 }
-
-/*---------------------------------------------------------------Testing!!!!--*/
-.fadeIn {
-    display:none;
-}  
+  
