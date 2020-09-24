@@ -1,5 +1,5 @@
-function initMap() {
-        
+
+        function initMap() {
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 3,
                 center: {
@@ -80,35 +80,48 @@ function initMap() {
         }
         ];
 
+        var InfoWindowContent = [
+            ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[0].image+'" alt="Card image cap">'
+  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[0].title+'</h1>'+'</div>'+'</div>'],
+  ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[1].image+'" alt="Card image cap">'
+  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[1].title+'</h1>'+'</div>'+'</div>'],
+  ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[2].image+'" alt="Card image cap">'
+  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[2].title+'</h1>'+'</div>'+'</div>'],
+  ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[3].image+'" alt="Card image cap">'
+  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[3].title+'</h1>'+'</div>'+'</div>'],
+  ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[4].image+'" alt="Card image cap">'
+  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[4].title+'</h1>'+'</div>'+'</div>'],
+  ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[5].image+'" alt="Card image cap">'
+  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[5].title+'</h1>'+'</div>'+'</div>'],
+  ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[6].image+'" alt="Card image cap">'
+  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[6].title+'</h1>'+'</div>'+'</div>'],
+  ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[7].image+'" alt="Card image cap">'
+  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[7].title+'</h1>'+'</div>'+'</div>'],
+  ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[8].image+'" alt="Card image cap">'
+  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[8].title+'</h1>'+'</div>'+'</div>'],
+  ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[9].image+'" alt="Card image cap">'
+  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[9].title+'</h1>'+'</div>'+'</div>']
+        ];
 
-        var infowindow = new google.maps.InfoWindow();
+
+
+        var infoWindow = new google.maps.InfoWindow(), marker, i;
 
         for (let i = 0; i < locations.length; i++) {
-        let marker = new google.maps.Marker({
+        marker = new google.maps.Marker({
             position: locations[i].position,
             map: map
-        });
+        }); 
 
-        let contentString = '<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[i].image+'" alt="Card image cap">'
-  +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[i].title+'</h1>'+'</div>'+'</div>';
 
-        infowindow = new google.maps.InfoWindow({
-            content: contentString,
-            maxWidth: 400
-        });
 
-        marker.addListener("click", () => {
-        
-            if (infowindow) {
-                infowindow.close();
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infoWindow.setContent(infoWindowContent[i][0]);
+                infoWindow.open(map, marker);
+                
             }
-            infowindow.open(map, marker);
-        });
-
-        map.addListener("click", () => {
-            if (infowindow) {
-                infowindow.close();
-            }
-        })
+        })(marker, i));     
     }
+
         }
