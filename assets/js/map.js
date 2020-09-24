@@ -80,7 +80,7 @@
         }
         ];
 
-        var InfoWindowContent = [
+        var infoWindowContent = [
             ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[0].image+'" alt="Card image cap">'
   +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[0].title+'</h1>'+'</div>'+'</div>'],
   ['<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[1].image+'" alt="Card image cap">'
@@ -113,7 +113,7 @@
             map: map
         }); 
 
-
+         infoWindow =  new google.maps.InfoWindow();
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
