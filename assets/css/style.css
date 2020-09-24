@@ -314,6 +314,12 @@ div#map{
     overflow: hidden;
 }
 
+.link-map:hover{
+    text-decoration: none;
+    color:#79b89f;
+    border: 1px solid #79b89f;
+}
+
 /*---------------------------------------------------------------Recommended by--*/
 
 .image-recommended{
