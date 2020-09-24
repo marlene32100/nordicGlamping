@@ -78,7 +78,10 @@ function initMap() {
         map: map,
         image: "assets/images/buubble.jpg"
         }
-        ]
+        ];
+
+
+        var infowindow = new google.maps.InfoWindow();
 
         for (let i = 0; i < locations.length; i++) {
         let marker = new google.maps.Marker({
@@ -89,7 +92,7 @@ function initMap() {
         let contentString = '<div class="card" style="width: 20rem;">'+'<img class="card-img-top" src="'+locations[i].image+'" alt="Card image cap">'
   +'<div class="card-body">'+'<h1 class="card-text map-title">'+locations[i].title+'</h1>'+'</div>'+'</div>';
 
-        let infowindow = new google.maps.InfoWindow({
+        infowindow = new google.maps.InfoWindow({
             content: contentString,
             maxWidth: 400
         });
