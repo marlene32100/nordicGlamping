@@ -1,3 +1,6 @@
+//The test has a bug because accepts strings made with both letters and special characters. Considering that different cultures
+//have also different ways to write names, this bug is considered allowed and not critical. It could be improved in the future.
+
 describe("validation", function() {
 
   it("is a string with only letters", function() {
