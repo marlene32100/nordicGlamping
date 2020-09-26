@@ -98,6 +98,13 @@
      font-weight: 400;
  }
 
+ .submit{
+ font-family: "Nunito-sans", sans-serif;
+ font-size: 1rem;
+ color: #033646;
+ text-transform: uppercase;
+ }
+
 .footer-title {
     font-size: 3rem;
 }
@@ -398,6 +405,14 @@ textarea#message{
 #contact-section {
   margin-bottom: 0;
   padding-bottom: 3rem;
+}
+
+button.submit{
+    margin-top: 1rem;
+}
+
+button.submit:hover{
+    background-color: #abd2c3;
 }
 
 /*---------------------------------------------------------------Footer--*/
