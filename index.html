@@ -18,6 +18,15 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Nordic Glamping</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"> </script>
+<!--EmailJS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
+})();
+</script>
+
   </head>
 
   <body>
@@ -233,36 +242,37 @@
 </div>
         <div class="row section-row">
           <div class="col-sm-12 col-md-6 d-block section-column form-column">
-            <form class="contact-form fadeIn" method="POST" action="#">
+            <form class="contact-form fadeIn" method="POST" action="?" onsubmit="return sendEmail(this);">
   
-  <div class="form-check fadeIn">
-  <input class="form-check-input" type="checkbox" value="" id="mr">
+  <div class="form-check">
+  <input name="mr" class="form-check-input" type="checkbox" value="" id="mr">
   <label class="form-check-label" for="mr">
     Mr.
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="mrs">
+  <input name="mrs" class="form-check-input" type="checkbox" value="" id="mrs">
   <label class="form-check-label" for="mrs">
     Mrs
   </label>
 </div>
 <div class="form-group">
 <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Name">
+    <input type="text" name="fName" class="form-control" id="name" aria-describedby="name" placeholder="Name">
     <label for="surname">Surname</label>
-    <input type="text" class="form-control" id="surname" aria-describedby="surname" placeholder="Surname">
+    <input type="text" name="lName" class="form-control" id="surname" aria-describedby="surname" placeholder="Surname">
     <label for="email">E-mail</label>
-    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="E-mail">
+    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="E-mail">
     <label for="phone">Phone</label>
-    <input type="tel" class="form-control" id="phone" aria-describedby="phone" placeholder="Phone">
+    <input type="tel" name="phone" class="form-control" id="phone" aria-describedby="phone" placeholder="Phone">
   </div>
     <label for="message">Your dream holiday should be:</label>
-    <textarea class="form-control" id="message" rows="10"></textarea>
-
+    <textarea name="message" class="form-control" id="message" rows="10"></textarea>
+     
 	<button
                 type="submit"
                 class="btn btn-light btn-block submit"
+                value="Send"
               >
                 Submit
     </button>
@@ -324,6 +334,7 @@
     <script src="assets/js/map.js"></script>
     <script defer src="assets/js/menu.js"></script>   
     <script defer src="assets/js/animation.js"></script> 
+    <script src="assets/js/sendEmail.js"></script> 
     <!-- Load Google Maps API script-->
     <script
       async
@@ -331,6 +342,8 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgCbJ3jwxFficfWpQdVOT3S3mgGK9dgU0&callback=initMap"
       type="text/javascript"
     ></script>
+    
+    
  
     
   </body>

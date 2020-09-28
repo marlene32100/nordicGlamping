@@ -1,4 +1,4 @@
-function validationText (inputtxt) {
+function validationText (text) {
         var regExText = /\D{70,}/;
-        return regExText.test(inputtxt);
+        return regExText.test(text);
 }
