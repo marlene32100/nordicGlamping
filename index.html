@@ -260,14 +260,14 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
 <label for="name">Name</label>
     <input type="text" name="fName" class="form-control name" id="name" aria-describedby="name" placeholder="Name" onchange="nameValidation(this)">
     <label for="surname">Surname</label>
-    <input type="text" name="lName" class="form-control name" id="surname" aria-describedby="surname" placeholder="Surname">
+    <input type="text" name="lName" class="form-control name" id="surname" aria-describedby="surname" placeholder="Surname" onchange="surnameValidation(this)">
     <label for="email">E-mail</label>
-    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="E-mail">
+    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="E-mail" onchange="emailValidation(this)">
     <label for="phone">Phone</label>
-    <input type="tel" name="phone" class="form-control" id="phone" aria-describedby="phone" placeholder="Phone">
+    <input type="tel" name="phone" class="form-control" id="phone" aria-describedby="phone" placeholder="Phone" onchange="phoneValidation(this)">
   </div>
     <label for="message">Your dream holiday should be:</label>
-    <textarea name="message" class="form-control" id="message" rows="10"></textarea>
+    <textarea name="message" class="form-control" id="message" rows="10" onchange="messageValidation(this)"></textarea>
      
 	<button
                 type="submit"
@@ -335,6 +335,10 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
     <script defer src="assets/js/menu.js"></script>   
     <script defer src="assets/js/animation.js"></script> 
     <script src="assets/js/validation/nameValidation.js"></script> 
+    <script src="assets/js/validation/surnameValidation.js"></script> 
+    <script src="assets/js/validation/emailValidation.js"></script> 
+    <script src="assets/js/validation/phoneValidation.js"></script> 
+    <script src="assets/js/validation/messageValidation.js"></script> 
     <script defer src="assets/js/sendEmail.js"></script> 
     <!-- Load Google Maps API script-->
     <script
