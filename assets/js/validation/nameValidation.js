@@ -10,7 +10,7 @@ function nameValidation(inputtxt) {
     }
     if(document.contactForm.fName.value == " "){
       alert("Please enter your name");
-     document.contactForm.fName.value();
+     document.contactForm.fName.focus();
       return false;
     }
 

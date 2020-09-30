@@ -244,30 +244,30 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
           <div class="col-sm-12 col-md-6 d-block section-column form-column">
             <form class="contact-form fadeIn" name="contactForm" method="POST" action="?" onsubmit="return sendEmail(this);">
   
-  <div class="form-check">
-  <input name="mr" class="form-check-input" type="checkbox" value="" id="mr">
-  <label class="form-check-label" for="mr">
+  <div class="radio">
+  <label class="radio-inline">
+  <input name="optradio" type="radio" id="mr">
     Mr.
   </label>
-</div>
-<div class="form-check">
-  <input name="mrs" class="form-check-input" type="checkbox" value="" id="mrs">
-  <label class="form-check-label" for="mrs">
+<!--</div>
+<div class="radio">-->
+<label class="radio-inline">
+  <input name="optradio" type="radio" id="mrs">
     Mrs
   </label>
 </div>
 <div class="form-group" name="myForm">
 <label for="name">Name</label>
-    <input type="text" name="fName" class="form-control name" id="name" aria-describedby="name" placeholder="Name" onchange="nameValidation(this)">
+    <input required type="text" name="fName" class="form-control name" id="name" aria-describedby="name" placeholder="Name" onchange="nameValidation(this)">
     <label for="surname">Surname</label>
-    <input type="text" name="lName" class="form-control name" id="surname" aria-describedby="surname" placeholder="Surname" onchange="surnameValidation(this)">
+    <input required type="text" name="lName" class="form-control name" id="surname" aria-describedby="surname" placeholder="Surname" onchange="surnameValidation(this)">
     <label for="email">E-mail</label>
-    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="E-mail" onchange="emailValidation(this)">
+    <input required type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="E-mail" onchange="emailValidation(this)">
     <label for="phone">Phone</label>
-    <input type="tel" name="phone" class="form-control" id="phone" aria-describedby="phone" placeholder="Phone" onchange="phoneValidation(this)">
+    <input required type="tel" name="phone" class="form-control" id="phone" aria-describedby="phone" placeholder="Phone" onchange="phoneValidation(this)">
   </div>
-    <label for="message">Your dream holiday should be:</label>
-    <textarea name="message" class="form-control" id="message" rows="10" onchange="messageValidation(this)"></textarea>
+    <label for="message">Your dream holiday:</label>
+    <textarea required name="message" class="form-control" id="message" rows="10" onchange="messageValidation(this)"></textarea>
      
 	<button
                 type="submit"
@@ -319,7 +319,7 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
     <address class="address">Nicest Road 1A, Knivsta, Sweden</address>
     <a href="tel:000-123-45-67" class="fa fa-phone icon"><span class="link-section"> Phone</span></a>
     <a href="mailto:info@nordicglamping.se" class="fa fa-envelope-open icon"><span class="link-section"> E-mail</span></a>
-    
+    <br>
     <small>&copy;KatiaDB2020</small>
     </div>
     </footer>

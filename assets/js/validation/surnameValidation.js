@@ -9,7 +9,7 @@ function surnameValidation(inputtxt) {
     }
     if(document.contactForm.lName.value == " "){
       alert("Please enter your surname");
-     document.contactForm.lName.value();
+     document.contactForm.lName.focus();
       return false;
     }
 

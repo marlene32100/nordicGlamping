@@ -9,7 +9,7 @@ function messageValidation(inputtxt) {
     }
     if(document.contactForm.message.value == " "){
       alert("Please write a message");
-     document.contactForm.message.value();
+     document.contactForm.message.focus();
       return false;
     }
 

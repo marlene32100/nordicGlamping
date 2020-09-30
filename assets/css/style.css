@@ -8,7 +8,7 @@
  }
 
  body{
-     margin: 0;
+     margin: auto;
      padding: 0;
      width: 100vw;
  }
@@ -413,6 +413,16 @@ button.submit{
 
 button.submit:hover{
     background-color: #abd2c3;
+    border-color: #304e42;
+}
+
+input:hover, textarea:hover {
+    border-color: #304e42;
+    background-color: #ddede7
+}
+
+input:focus, textarea:focus{
+   border: 2px groove #304e42;
 }
 
 /*---------------------------------------------------------------Footer--*/
@@ -493,9 +503,13 @@ span.link-section{
     .recommended-row-small-screen{
         margin-top: 1.5rem;
     }
+
+    .contact-form {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 375px) {
     .title {
         font-size: 3rem;
         text-align: center;
@@ -516,5 +530,7 @@ span.link-section{
     label{
         font-size: 1.5rem;
     }
+
+    
 }
   
