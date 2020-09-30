@@ -242,7 +242,7 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
 </div>
         <div class="row section-row">
           <div class="col-sm-12 col-md-6 d-block section-column form-column">
-            <form class="contact-form fadeIn" method="POST" action="?" onsubmit="return sendEmail(this);">
+            <form class="contact-form fadeIn" name="contactForm" method="POST" action="?" onsubmit="return sendEmail(this);">
   
   <div class="form-check">
   <input name="mr" class="form-check-input" type="checkbox" value="" id="mr">
@@ -256,11 +256,11 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
     Mrs
   </label>
 </div>
-<div class="form-group">
+<div class="form-group" name="myForm">
 <label for="name">Name</label>
-    <input type="text" name="fName" class="form-control" id="name" aria-describedby="name" placeholder="Name">
+    <input type="text" name="fName" class="form-control name" id="name" aria-describedby="name" placeholder="Name" onchange="nameValidation(this)">
     <label for="surname">Surname</label>
-    <input type="text" name="lName" class="form-control" id="surname" aria-describedby="surname" placeholder="Surname">
+    <input type="text" name="lName" class="form-control name" id="surname" aria-describedby="surname" placeholder="Surname">
     <label for="email">E-mail</label>
     <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="E-mail">
     <label for="phone">Phone</label>
@@ -334,7 +334,8 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
     <script src="assets/js/map.js"></script>
     <script defer src="assets/js/menu.js"></script>   
     <script defer src="assets/js/animation.js"></script> 
-    <script src="assets/js/sendEmail.js"></script> 
+    <script src="assets/js/validation/nameValidation.js"></script> 
+    <script defer src="assets/js/sendEmail.js"></script> 
     <!-- Load Google Maps API script-->
     <script
       async
