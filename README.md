@@ -1,39 +1,132 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Nordic Glamping
 
-Welcome marlene32100,
+View the live project here. [Nordic Glamping](https://marlene32100.github.io/nordicGlamping/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+For the Second Milestone Project with the Code Institute, I have decided to design an interactive website for a fictional travel agency. The website, more specifically, is about the top locations for glamping in the Nordic countries.
+The final user of the website is a wealthy person who is looking for a different kind of holiday, that combines the strengths of camping (being in contact with nature, outside urban areas) without giving up all the comforts of a 5 stars hotel. The fictional travel agency is specialized in luxury hospitality.
+The website is a single page divided in five sections:
 
-## Gitpod Reminders
+* Landing Page
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The landing page is very simple. There is a full screen video in the background with a view from above of a Nordic forest. The colours in the video are the same colours used throughout the website. A general feel of silence, open space, calmness, take immediately the user inside the purpose of glamping.
+A title and a subtitle welcome the user, inviting him/her to navigate through the website with the words “explore the silence”. The user can click on this sentence and can go directly to the following section, which is “Glam and camping”, or can scroll down the page and reach the same section.
+A fade in effect drives to user down to the website, with a smooth effect that is in line with the general sense of relax that the user is supposed to experience.
 
-`python3 -m http.server`
+* Glam and Camping
 
-A blue button should appear to click: *Make Public*,
+The second section is an introduction of what the purpose of this kind of holiday is.
+There is a text and a image that briefly summarize both visually and with words what is a luxury camping experience, and for who it is for.
 
-Another blue button should appear to click: *Open Browser*.
+* Map
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+In this section I have used the Google Maps API to display a map with the locations that the travel agency suggests.
+Next to the map a brief description to invite the user to click on the map, or contact directly the agency for a more tailored experience.
+The map shows the locations with markers; when the user click on one location, a info window is displayed with a image of the place and its name. Clicking on the window the user is re-directed to the home page of the glamping site on another tab. 
+Clicking a second marker makes the first info window close, and opens the relative info window. In this way, only one information at a time is displayed and the user don’t get too much confused.
 
-A blue button should appear to click: *Make Public*,
+* Recommended by
 
-Another blue button should appear to click: *Open Browser*.
+This section shows all the sponsors or the magazines that promoted this fictional travel agency and their glamping project.
+The six logos are displayed inside six circles and a text explains who those sponsors are.
+This should convey a sense of reliability and security, so that the user doesn’t feel afraid to book a holiday with them.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+* Contact    
 
-## Updates Since The Instructional Video
+The last section is the contact area. 
+There is a contact form where the user can write his/her wishes for a perfect holiday, so the travel agency can contact them with a tailored offer.
+Next to the contact form there is a card showing a picture of the people working in the office, and the contact details such as address, phone number and email.
+The picture of the employees should add more sense of reliability and professionality.
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+* Footer 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+A footer repeats the contact details, adding the links for the social media pages.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+---
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## User Experience (UX)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* Strategy Plane
+* Scope Plane
+* Structure Plane
+* Skeleton Plane
 
---------
+## User stories
 
-Happy coding!
+### First Time Visitor Goals
+* As a First Time Visitor, I want to understand what glamping is and what the travel agency offers.
+* As a First Time Visitor, I want to find the best locations for glamping in the Nordic countries.
+* As a First Time Visitor, I want to ask for a tailored experience and get in touch with the travel agency.
+### Returning Visitor Goals
+* As a Returning Visitor, I want to find out if there are new locations for glamping.
+* As a Returning Visitor, I want to contact the travel agency.
+### Frequent User Goals
+* As a Frequent User, I want to book my holidays.
+* As a Frequent User, I want to phone or send a e-mail to the agency.                                    
+
+---
+
+## Design
+
+For this project I decided to use a single page layout, playing with design.
+The goal of the website is to show immediately the brand image of the travel agency and their glamping experience. 
+It means that the user should feel from the very first second a sense of tranquillity, connection with the wild nordic nature and at the same time a sense of professionality and safety.
+To achieve this, I used a minimal layout, but well planned in its details.
+
+First of all, the landing page has a full screen video with a nordic forest shown from the above. The video divides the screen in two areas, a green one with the trees and a light gray one on the upper side.
+Those colours give a sense of calmness, and have been used as leit-motiv for all the website.
+
+Personality is shown also from the style of the menu navbar:
+for smaller screens I decided to design three dots on the top-left of the screen, to suggest that in that place there is some extra features.
+For bigger screens I designed a lateral menu on the left side, where the word "menu" is shown vertically.
+Clicking on the menu, a full screen black opaque overlay is shown with the links to the different sections of the website.
+
+I have used JQuery to achieve a deeper sense of calmness, using its fadeIn effect on scroll. The content of the website is shown smoothly appearing one after one.
+
+## Colour Scheme
+
+![alt palette](assets/images/readme/palette.png)
+
+The colour palette that I choose reminds of nature and silence. 
+Throughout the website the colours are repeated, so that the user feels comfortable.
+Hovering over links or on the contact form, repeats as well the same colour palette.
+Basically I took the colour scheme of the video in the landing page and I adapted it to the website.
+The background of the website is not white, but it is a shade of light gray. I think that this solution helps to convey a idea of softness and nature.
+
+## Typography
+
+The font that I used are "Montserrat" and "Nunito Sans". 
+They are very modern and minimal and I think that they are perfect for a design that should remind of the Nordic countries.
+I have played with different heights and letter spacing to add more character to the style.
+
+## Imagery
+
+For this project I used the full screen video and the final image of the employees from [Pexels](www.pexels.com).
+
+The images of the locations in the info window have been taken from those websites:
+
+[Ice Hotel](https://www.telegraph.co.uk/travel/destinations/europe/sweden/galleries/icehotel-winter-2019-2020-ice-hotel-in-swedish-lapland/);
+
+[Tree Hotel](https://www.booking.com/hotel/se/treehotel.it.html?aid=356981;label=gog235jc-1DCAsoyAFCCXRyZWVob3RlbEgzWANoyAGIAQGYARS4ARfIAQzYAQPoAQGIAgGoAgO4AvqOqfsFwAIB0gIkNmY3YmUwYWYtNmIyNi00MDE0LTgyNDAtMzQzZjBjMGQ2MDBl2AIE4AIB;sid=5a82bd3c868caeb11a55846f2c8303a5;dist=0&keep_landing=1&sb_price_type=total&type=total&);
+
+[Narvik](https://www.gites.fr/gites_narvik-adventures-as_narvik_h2411589_en.htm);
+
+[Jeris Aurora Dome](https://www.booking.com/hotel/fi/jeris-aurora-dome.it.html?aid=356981;label=gog235jc-1DCAsoSEIRamVyaXMtYXVyb3JhLWRvbWVIM1gDaMgBiAEBmAEUuAEXyAEM2AED6AEBiAIBqAIDuALTkKn7BcACAdICJGYyNzhjMjc4LTZmN2ItNDEyYy04ZWNhLTUwNTQwMzhlY2Y1OdgCBOACAQ;sid=5a82bd3c868caeb11a55846f2c8303a5;dist=0&keep_landing=1&sb_price_type=total&type=total&);
+
+[Torassieppi](https://www.pitchup.com/sv/campsites/finland/lapland/northern_lapland/saariselkae/torassieppi_jerisjaervi/);
+
+[Levin]([https://www.designstack.co/2018/11/glass-igloos-hotel-resort-in-finland.html);
+
+[Kakslauttanen](https://www.alux.com/wp-content/uploads/2014/03/hotel_kakslauttanen_finlandia_5589_1200x800.jpg);
+
+[Reykjavik Domes](http://reykjavik-domes.hotels-reykjavik-is.com/it/#sunset-main-gallery-2);
+
+[Buubbles Iceland](https://www.facebook.com/bubblesiceland/);
+
+
+
+To avoid the website being too heavy to load, I used the website [Resize Image](https://resizeimage.net/)
+
+
+
+
+
