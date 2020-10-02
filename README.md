@@ -1,5 +1,7 @@
 # Nordic Glamping
 
+![alt Nordic Glamping website mockup](assets/images/readme/landingMockup.png)
+
 View the live project here. [Nordic Glamping](https://marlene32100.github.io/nordicGlamping/)
 
 For the Second Milestone Project with the Code Institute, I have decided to design an interactive website for a fictional travel agency. The website, more specifically, is about the top locations for glamping in the Nordic countries.
@@ -22,13 +24,17 @@ There is a text and a image that briefly summarize both visually and with words 
 In this section I have used the Google Maps API to display a map with the locations that the travel agency suggests.
 Next to the map a brief description to invite the user to click on the map, or contact directly the agency for a more tailored experience.
 The map shows the locations with markers; when the user click on one location, a info window is displayed with a image of the place and its name. Clicking on the window the user is re-directed to the home page of the glamping site on another tab. 
-Clicking a second marker makes the first info window close, and opens the relative info window. In this way, only one information at a time is displayed and the user don’t get too much confused.
+Clicking a second marker makes the first info window close, and opens the relative info window. In this way, only one information at a time is displayed and the user doesn’t get too much confused.
+
+![alt map](assets/images/readme/igloo.png)
 
 * Recommended by
 
 This section shows all the sponsors or the magazines that promoted this fictional travel agency and their glamping project.
 The six logos are displayed inside six circles and a text explains who those sponsors are.
 This should convey a sense of reliability and security, so that the user doesn’t feel afraid to book a holiday with them.
+
+![alt logos of testimonials](assets/images/readme/logos.png)
 
 * Contact    
 
@@ -80,17 +86,24 @@ for smaller screens I decided to design three dots on the top-left of the screen
 For bigger screens I designed a lateral menu on the left side, where the word "menu" is shown vertically.
 Clicking on the menu, a full screen black opaque overlay is shown with the links to the different sections of the website.
 
+![alt menu overlay](assets/images/readme/menuMockup.png)
+
 I have used JQuery to achieve a deeper sense of calmness, using its fadeIn effect on scroll. The content of the website is shown smoothly appearing one after one.
 
 ## Colour Scheme
 
 ![alt palette](assets/images/readme/palette.png)
 
+Colour scheme image designed with [Coolors.com](https://coolors.co/)
+
 The colour palette that I choose reminds of nature and silence. 
 Throughout the website the colours are repeated, so that the user feels comfortable.
 Hovering over links or on the contact form, repeats as well the same colour palette.
 Basically I took the colour scheme of the video in the landing page and I adapted it to the website.
 The background of the website is not white, but it is a shade of light gray. I think that this solution helps to convey a idea of softness and nature.
+
+To help me with the choice of colours I used the website [Color-Hex](https://www.color-hex.com/)
+
 
 ## Typography
 
@@ -124,7 +137,45 @@ The images of the locations in the info window have been taken from those websit
 
 
 
-To avoid the website being too heavy to load, I used the website [Resize Image](https://resizeimage.net/)
+To avoid the website being too heavy to load, I used the website [Resize Image](https://resizeimage.net/) to crop and resize images.
+Pictures used for info windows are 400x400px, and logos are 200x200px.
+
+Logos have been taken from the web.
+
+## Wireframes
+
+I used Balsamiq to design the layout.
+
+## Features
+
+The website has a clean layout with all the essential informations displayed both on smaller and larger screen.
+There is a navigation bar, a footer with all the links to connect with the travel agency, a contact form, testimonials.
+I have checked the responsiveness on all devices so that everything looks nice and clear.
+
+The website is also fast to navigate; people usually don't want to spend too much time on a website looking for informations. 
+Most of the time, also, people navigate from their mobile phones when they are (for instance) travelling on a bus, train, or in other situations where they don't have too much time.
+The target of users that the website aims to, moreover, is usually wealthy people who rather prefers to pay money to have someone fixing problems for them, instead of wasting time trying to find the best solutions on their own.
+That is the reason why the website is minimal, but at the same time gives all the infos needed.
+
+I have used Javascript to validate the contact form; in this way mistakes are reduced and the user is guided throughout the filling.
+Fields such as name/surname and phone number cannot be validate perfectly, since not everyone in the world uses the Latin alphabet or the same way yo write a phone number.
+To reduce mistakes, I decided to validate name/surname accepting alphabet and special characters: in this way, also letters such as Å, Ä, Ö, just to name a few, can be validated.
+Phone numbers accepts obviously only digits, with a minimum of 9. According to [O'reilly website] (https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s03.html), the shortest phone number in the world has 7 digits.
+Considering that the travel agency is supposed to be located in Sweden, someone who lives in another country and has a phone number of 7 digits is forced to enter also the country prefix (which is usually 2 digits).
+
+Other features are an interactive map that displays the best locations for glamping, and that shows in a clean and nice way the image of the location.
+I used Bootstrap cards to customize the info windows, so it looks more consistent with the rest of the website and is also more pleasant to look at.
+
+## Features to implement
+
+In the future I would like to add a page for each location. This idea was in my original project, but it takes too much time: I will implement it in a second moment.
+I will show for each locations a carousel of images, more details about the place and its facilities, reviews of other customers.
+It would be nice to add the Booking.com API so that users can book their holidays from the Nordic Glamping website.
+
+I would like also to change the style of the contact form, so that it looks more unique. I will place the label instead of the placeholder, then I will add icons that shows if a field is correctly validated <i class="fa fa-check-circle" style="color: green"></i>, or not <i class="fa fa-exclamation-circle" style="color:  red"></i>.
+
+
+
 
 
 
