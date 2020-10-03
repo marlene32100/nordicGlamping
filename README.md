@@ -214,6 +214,9 @@ This will not affect the user experience, but it will affect the owner's side be
 
 Html and Css have been validated with [HTML Validator](https://validator.w3.org/) and [CSS Validator](https://jigsaw.w3.org/css-validator/).
 
+I used also Jasmine to write tests for the contact form validation. You can view my tests here: [Jasmine Testing Scripts](testing/scripts) and [Jasmine Testing Specs](testing/specs).
+I had to fix further the validation code because when applied to the form didn't perform always as expected. So I added manual testing until the code worked out as I wanted.
+
 ### Usability Testing
 
 According to people who tested the website, it is easy to navigate and the typography is legible.
@@ -236,7 +239,20 @@ I tested the website on multiple browsers:
 
 I tested also on multiple devices with Google DevTools.
 
+### Performance Testing
 
+I tested the website with [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) and the result was very good for desktop devices, a little less for mobiles.
+
+
+![PageSpeed results for desktop: 98%](assets/images/readme/speedDesktop.png)
+
+![PageSpeed results for mobile: 80%](assets/images/readme/speedMobile.png)
+
+In the future I can resize the images for mobile devices, so it takes less to upload.
+
+I tested further with [Google Test Mobile Friendly](https://search.google.com/test/mobile-friendly) and the result was really good. The website performs well on mobile phones.
+
+![Result for Google Test Mobile Friendly: ok](assets/images/readme/mobileFriendly.png)
 
 
 
