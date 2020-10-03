@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -18,52 +18,49 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Nordic Glamping</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"> </script>
-<!--EmailJS-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
-})();
-</script>
-
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!--EmailJS-->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
+      })();
+    </script>
   </head>
 
   <body>
+    <!--Menu -->
 
-   <!--Menu -->
+    <div class="menu-expanded" id="menu-expanded">
+      <div class="menu-links">
+        <ul>
+          <li><a href="#information-section" class="link-item">Glamping</a></li>
+          <li><a href="#map-section" class="link-item">Locations</a></li>
+          <li><a href="#recommended-section" class="link-item">About us</a></li>
+          <li><a href="#contact-section" class="link-item">Contact</a></li>
+          <li><i class="fa fa-times close-icon link-item"></i></li>
+        </ul>
+      </div>
+    </div>
 
-   <div class="menu-expanded" id="menu-expanded">
-   
-   <div class="menu-links">
-   <ul>
-   <li><a href="#information-section" class="link-item">Glamping</a></li>
-   <li><a href="#map-section" class="link-item">Locations</a></li>
-   <li><a href="#recommended-section" class="link-item">About us</a></li>
-   <li><a href="#contact-section" class="link-item">Contact</a></li>
-   <li><i class="fa fa-times close-icon link-item"></i></li>
-   </ul>
-   </div>
-   </div>
-   
-   <!--Menu for smaller screens-->
-   <nav class="navbar navbar-custom-small d-lg-none">
-   <!--code for dots taken from tutorial at https://www.w3schools.com/howto/howto_css_circles.asp-->
-   <div id="dots-container">
-   <a href="#menu-expanded">
-   <span class="dot"></span>
-   <span class="dot"></span>
-   <span class="dot"></span>
-   </a>
-   </div>
-   </nav>
-
-   <!--Menu for bigger screens-->
-   <nav class="navbar navbar-custom d-none d-lg-block">
-   <a class="nav-link" href="#menu-expanded" id="navbarMenuLink" >
-          Menu
+    <!--Menu for smaller screens-->
+    <nav class="navbar navbar-custom-small d-lg-none">
+      <!--code for dots taken from tutorial at https://www.w3schools.com/howto/howto_css_circles.asp-->
+      <div id="dots-container">
+        <a href="#menu-expanded">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </a>
-   </nav>
+      </div>
+    </nav>
+
+    <!--Menu for bigger screens-->
+    <nav class="navbar navbar-custom d-none d-lg-block">
+      <a class="nav-link" href="#menu-expanded" id="navbarMenuLink">
+        Menu
+      </a>
+    </nav>
 
     <!--Landing page-->
     <div id="landingPage">
@@ -73,9 +70,12 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
       <div class="overlay">
         <div id="homePageText">
           <h1 class="websiteName title">Nordic Glamping</h1>
-          <h3 class="websiteName subtitle"><a href="#information-section" class="websiteName subtitle">-explore the silence-</a></h3>
+          <h3 class="websiteName subtitle">
+            <a href="#information-section" class="websiteName subtitle"
+              >-explore the silence-</a
+            >
+          </h3>
         </div>
-        
       </div>
     </div>
 
@@ -87,12 +87,19 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
           <div class="col-sm-12 col-lg-6 section-column">
             <div class="article-column">
               <p class="text-section fadeIn">
-                Escape the city and connect with your inner soul in the heart of the Scandinavian nature.<br>
-                Enjoy the sound of water, wind and bonefires alone with yourself or with your loved ones.<br><br>
-                Add the comfort of a 5-stars hotel with the experience of a camping.<br>
-                We will provide all those small details that will take your glamping to a next level:<br><br>
-                hot bath tubs, <br>amazing food prepared for you by a professional chef with local ingredients, <br>sauna,
-                clean towels every day, <br>and a private land where no one else can access:<br> only you. 
+                Escape the city and connect with your inner soul in the heart of
+                the Scandinavian nature.<br />
+                Enjoy the sound of water, wind and bonefires alone with yourself
+                or with your loved ones.<br /><br />
+                Add the comfort of a 5-stars hotel with the experience of a
+                camping.<br />
+                We will provide all those small details that will take your
+                glamping to a next level:<br /><br />
+                hot bath tubs, <br />amazing food prepared for you by a
+                professional chef with local ingredients, <br />sauna, clean
+                towels every day, <br />and a private land where no one else can
+                access:<br />
+                only you.
               </p>
             </div>
           </div>
@@ -125,12 +132,15 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
           <div class="col-sm-12 col-lg-4 section-column">
             <div class="article-column">
               <p class="text-section fadeIn">
-                We have some amazing locations in the Scandinavian area where you can book your exclusive glamping holidays.<br>
-                Click on the map and have a look at those amazing places.<br>
-                <br>
-                If you are looking for a extra luxury experience 100% tailored on you, please contact us and we will be pleased to plan something really special for your holidays.
-                <br>
-                Nordic Glamping has been 
+                We have some amazing locations in the Scandinavian area where
+                you can book your exclusive glamping holidays.<br />
+                Click on the map and have a look at those amazing places.<br />
+                <br />
+                If you are looking for a extra luxury experience 100% tailored
+                on you, please contact us and we will be pleased to plan
+                something really special for your holidays.
+                <br />
+                Nordic Glamping has been
               </p>
             </div>
           </div>
@@ -148,18 +158,19 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
       <h2 class="heading-title fadeIn">Recommended by</h2>
       <div class="container-fluid">
         <div class="row section-row recommended-row">
-          <div
-            class="col-sm-12 col-lg-4 section-column"
-          >
+          <div class="col-sm-12 col-lg-4 section-column">
             <div class="article-column">
               <p class="text-section fadeIn">
-                Since 2010 we have been working with<br> Luxury Hospitality.<br>
-                We appeared on some of the major magazines and websites<br> dedicates to latest trends and exclusivness:<br>
-                Elite, Forbes, Luxos,<br> Luxury Travel Magazine, Vogue, and Wall Street Journal.
+                Since 2010 we have been working with<br />
+                Luxury Hospitality.<br />
+                We appeared on some of the major magazines and websites<br />
+                dedicates to latest trends and exclusivness:<br />
+                Elite, Forbes, Luxos,<br />
+                Luxury Travel Magazine, Vogue, and Wall Street Journal.
               </p>
             </div>
           </div>
-          
+
           <div class="col-sm-12 col-lg-8 section-column fadeIn">
             <div class="row">
               <div class="col-sm-12 col-md-4 logo-small-screen">
@@ -185,31 +196,31 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
               </div>
             </div>
           </div>
-          </div>
+        </div>
 
-        <div class="row section-row recommended-row recommended-row-small-screen">
-          <div
-            class="col-sm-12 col-lg-8 section-column fadeIn"
-          >
+        <div
+          class="row section-row recommended-row recommended-row-small-screen"
+        >
+          <div class="col-sm-12 col-lg-8 section-column fadeIn">
             <div class="row">
               <div class="col-sm-12 col-md-4 logo-small-screen">
                 <img
                   src="assets/images/logo/luxury.jpg"
-                  alt="Elite logo"
+                  alt="Luxury Travel Magazine logo"
                   class="image-recommended"
                 />
               </div>
               <div class="col-sm-12 col-md-4 logo-small-screen">
                 <img
                   src="assets/images/logo/vogue.jpg"
-                  alt="Forbes logo"
+                  alt="Vogue logo"
                   class="image-recommended"
                 />
               </div>
               <div class="col-sm-12 col-md-4 logo-small-screen">
                 <img
                   src="assets/images/logo/wallstreet.png"
-                  alt="Luxos logo"
+                  alt="Wallstreet Journal logo"
                   class="image-recommended"
                 />
               </div>
@@ -219,9 +230,11 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
           <div class="col-sm-12 col-lg-4 section-column">
             <div class="article-column">
               <p class="text-section fadeIn">
-                Our customized journeys are created to last a lifetime.<br>
-                Nordic Glamping will accomplish your goals and exceed your expectations.<br>
-                Our team is always part of your journey, assuring you well-crafted, personalized experiences.
+                Our customized journeys are created to last a lifetime.<br />
+                Nordic Glamping will accomplish your goals and exceed your
+                expectations.<br />
+                Our team is always part of your journey, assuring you
+                well-crafted, personalized experiences.
               </p>
             </div>
           </div>
@@ -235,121 +248,212 @@ emailjs.init("user_hUGIJjuWYyLN3mFsmUCVk");
     <section class="section-area" id="contact-section">
       <h2 class="heading-title fadeIn">Contact us</h2>
       <div class="container-fluid">
-<div class="row section-row">
-<div class="col-12">
-                 <p class="text-section fadeIn">For a tailored experience and the highest level of luxury, please contact us.<br> We will plan a special holiday only for you, according to your desires.</p>
-</div>
-</div>
+        <div class="row section-row">
+          <div class="col-12">
+            <p class="text-section fadeIn">
+              For a tailored experience and the highest level of luxury, please
+              contact us.<br />
+              We will plan a special holiday only for you, according to your
+              desires.
+            </p>
+          </div>
+        </div>
         <div class="row section-row">
           <div class="col-sm-12 col-md-6 d-block section-column form-column">
-            <form class="contact-form fadeIn" name="contactForm" method="POST" action="?" onsubmit="return sendEmail(this);">
-  
+            <form
+              class="contact-form fadeIn"
+              name="contactForm"
+              method="POST"
+              action="?"
+              onsubmit="return sendEmail(this);"
+            >
+              <!--
   <div class="radio">
   <label class="radio-inline">
-  <input name="optradio" type="radio" id="mr">
+  <input name="optradioMr" type="radio" id="mr">
     Mr.
   </label>
-<!--</div>
-<div class="radio">-->
+</div>
+<div class="radio">
 <label class="radio-inline">
-  <input name="optradio" type="radio" id="mrs">
+  <input name="optradioMrs" type="radio" id="mrs">
     Mrs
   </label>
-</div>
-<div class="form-group" name="myForm">
-<label for="name">Name</label>
-    <input required type="text" name="fName" class="form-control name" id="name" aria-describedby="name" placeholder="Name" onchange="nameValidation(this)">
-    <label for="surname">Surname</label>
-    <input required type="text" name="lName" class="form-control name" id="surname" aria-describedby="surname" placeholder="Surname" onchange="surnameValidation(this)">
-    <label for="email">E-mail</label>
-    <input required type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="E-mail" onchange="emailValidation(this)">
-    <label for="phone">Phone</label>
-    <input required type="tel" name="phone" class="form-control" id="phone" aria-describedby="phone" placeholder="Phone" onchange="phoneValidation(this)">
-  </div>
-    <label for="message">Your dream holiday:</label>
-    <textarea required name="message" class="form-control" id="message" rows="10" onchange="messageValidation(this)"></textarea>
-     
-	<button
+</div> -->
+              <div class="form-group">
+                <label for="name">* Name</label>
+                <input
+                  required
+                  type="text"
+                  name="fName"
+                  class="form-control name"
+                  id="name"
+                  aria-describedby="name"
+                  placeholder="Name"
+                  onchange="nameValidation(this)"
+                />
+                <label for="surname">* Surname</label>
+                <input
+                  required
+                  type="text"
+                  name="lName"
+                  class="form-control name"
+                  id="surname"
+                  aria-describedby="surname"
+                  placeholder="Surname"
+                  onchange="surnameValidation(this)"
+                />
+                <label for="email">* E-mail</label>
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email"
+                  placeholder="name@email.com"
+                  onchange="emailValidation(this)"
+                />
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control"
+                  id="phone"
+                  aria-describedby="phone"
+                  placeholder="Phone number"
+                  onchange="phoneValidation(this)"
+                />
+              </div>
+              <label for="message">* Your dream holiday:</label>
+              <textarea
+                required
+                name="message"
+                class="form-control"
+                id="message"
+                rows="10"
+                placeholder="Write your message (at least 70 char)"
+                onchange="messageValidation(this)"
+              ></textarea>
+              <small>* Fields are required</small>
+
+              <button
                 type="submit"
                 class="btn btn-light btn-block submit"
                 value="Send"
               >
                 Submit
-    </button>
-					
- 
-    </form>
-
+              </button>
+            </form>
           </div>
 
           <div class="col-sm-12 col-md-6 d-block section-column">
             <div class="card fadeIn">
-              <figure><img
-                src="assets/images/team.jpeg"
-                alt="Nordic Glamping team in the office"
-                class="image-section">
+              <figure>
+                <img
+                  src="assets/images/team.jpeg"
+                  alt="Nordic Glamping team at the office"
+                  class="image-section"
+                />
               </figure>
               <div class="card-body">
-              <h5 class="title footer-title">Nordic Glamping</h5>
-    <p class="text-section"> Our team is here to make your nordic luxury dreams come true.<br>The highest professionality at your service.
-    <br>
-    You can find us at:</p>
-    <address class="address">Nicest Road 1A, Knivsta, Sweden</address>
-    <a href="tel:000-123-45-67" class="fa fa-phone icon"><span class="link-section">Phone: 000-123-45-67</span></a><br>
-    <a href="mailto:info@nordicglamping.se" class="fa fa-envelope-open icon"><span class="link-section">E-mail: info@nordicglamping.se</span></a>
+                <h5 class="title footer-title">Nordic Glamping</h5>
+                <p class="text-section">
+                  Our team is here to make your nordic luxury dreams come
+                  true.<br />The highest professionality at your service.
+                  <br />
+                  You can find us at:
+                </p>
+                <address class="address">
+                  Nicest Road 1A, Knivsta, Sweden
+                </address>
+                <a href="tel:000-123-45-67" class="fa fa-phone icon"
+                  ><span class="link-section">Phone: 000-123-45-67</span></a
+                ><br />
+                <a
+                  href="mailto:info@nordicglamping.se"
+                  class="fa fa-envelope-open icon"
+                  ><span class="link-section"
+                    >E-mail: info@nordicglamping.se</span
+                  ></a
+                >
               </div>
             </div>
           </div>
         </div>
-    <a href="#information-section" class="fa fa-chevron-up icon-scroll icon-last"></a>
+        <a
+          href="#information-section"
+          class="fa fa-chevron-up icon-scroll icon-last"
+        ></a>
       </div>
     </section>
 
     <!--Footer-->
     <footer class="section-area" id="footer">
-    <div>
-    <h5 class="title footer-title">Nordic Glamping</h5>
-    <p class="text-section footer-text">Connect with us: 
-    <a href="https://www.facebook.com/" class="fa fa-facebook-f social"></a>
-    <a href="https://www.instagram.com/" class="fa fa-instagram social"></a>
-    <a href="https://www.youtube.com/" class="fa fa-youtube social"></a>
-    <a href="https://www.twitter.com/" class="fa fa-twitter social"></a>
-    </p>
-    
-    <address class="address">Nicest Road 1A, Knivsta, Sweden</address>
-    <a href="tel:000-123-45-67" class="fa fa-phone icon"><span class="link-section"> Phone</span></a>
-    <a href="mailto:info@nordicglamping.se" class="fa fa-envelope-open icon"><span class="link-section"> E-mail</span></a>
-    <br>
-    <small>&copy;KatiaDB2020</small>
-    </div>
+      <div>
+        <h5 class="title footer-title">Nordic Glamping</h5>
+        <p class="text-section footer-text">
+          Connect with us:
+          <a
+            href="https://www.facebook.com/"
+            class="fa fa-facebook-f social"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            class="fa fa-instagram social"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.youtube.com/"
+            class="fa fa-youtube social"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.twitter.com/"
+            class="fa fa-twitter social"
+            target="_blank"
+          ></a>
+        </p>
+
+        <address class="address">Nicest Road 1A, Knivsta, Sweden</address>
+        <a href="tel:000-123-45-67" class="fa fa-phone icon"
+          ><span class="link-section"> Phone</span></a
+        >
+        <a href="mailto:info@nordicglamping.se" class="fa fa-envelope-open icon"
+          ><span class="link-section"> E-mail</span></a
+        >
+        <br />
+        <small>&copy;KatiaDB2020</small>
+      </div>
     </footer>
 
     <!--Scripts-->
 
     <!-- Load scripts-->
-    
+
     <!-- Load Jquery script-->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
     <!-- Load custom scripts-->
     <script src="assets/js/map.js"></script>
-    <script defer src="assets/js/menu.js"></script>   
-    <script defer src="assets/js/animation.js"></script> 
-    <script src="assets/js/validation/nameValidation.js"></script> 
-    <script src="assets/js/validation/surnameValidation.js"></script> 
-    <script src="assets/js/validation/emailValidation.js"></script> 
-    <script src="assets/js/validation/phoneValidation.js"></script> 
-    <script src="assets/js/validation/messageValidation.js"></script> 
-    <script defer src="assets/js/sendEmail.js"></script> 
+    <script defer src="assets/js/menu.js"></script>
+    <script defer src="assets/js/animation.js"></script>
+    <script src="assets/js/validation/nameValidation.js"></script>
+    <script src="assets/js/validation/surnameValidation.js"></script>
+    <script src="assets/js/validation/emailValidation.js"></script>
+    <script src="assets/js/validation/phoneValidation.js"></script>
+    <script src="assets/js/validation/messageValidation.js"></script>
+    <script defer src="assets/js/sendEmail.js"></script>
     <!-- Load Google Maps API script-->
     <script
       async
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgCbJ3jwxFficfWpQdVOT3S3mgGK9dgU0&callback=initMap"
-      type="text/javascript"
     ></script>
-    
-    
- 
-    
   </body>
 </html>

@@ -172,7 +172,71 @@ In the future I would like to add a page for each location. This idea was in my 
 I will show for each locations a carousel of images, more details about the place and its facilities, reviews of other customers.
 It would be nice to add the Booking.com API so that users can book their holidays from the Nordic Glamping website.
 
-I would like also to change the style of the contact form, so that it looks more unique. I will place the label instead of the placeholder, then I will add icons that shows if a field is correctly validated <i class="fa fa-check-circle" style="color: green"></i>, or not <i class="fa fa-exclamation-circle" style="color:  red"></i>.
+I would like also to change the style of the contact form, so that it looks more unique. I will place the label instead of the placeholder, then I will add icons that shows if a field is correctly validated, or not.
+
+---
+
+## Technologies Used
+
+### Languages Used
+* HTML5
+* CSS3
+* Javascript
+
+### Frameworks, Libraries & Programs Used
+
+* Bootstrap 4.5.0.
+* Google Fonts
+* Font Awesome 4.7.0.
+* jQuery
+* Git
+* GitHub
+* GitPod
+* Chrome DevTools
+* Techsini mockup generator
+* Autoprefixer CSS
+* Google Maps API
+* EmailJS API
+
+---
+
+## Testing
+
+### Functionality Testing 
+
+All the links have been checked and they all are working.
+
+The form fields have also been checked by me and some testers. The fields are correctly validated and the message is sent properly.
+However, the message I get on my email doesn’t show if the user selected "Mr", "Mrs", or none of them.
+Another problem I found is that the form is submitted also if the message texarea does not fulfill the requirements I wrote on my code (at least 70 char).
+The alert immediately tells the user that he/she should add more details if the text is too short, but the form is submitted anyway.
+This will not affect the user experience, but it will affect the owner's side because too many emails can be sent with a text that might be too short.
+
+Html and Css have been validated with [HTML Validator](https://validator.w3.org/) and [CSS Validator](https://jigsaw.w3.org/css-validator/).
+
+### Usability Testing
+
+According to people who tested the website, it is easy to navigate and the typography is legible.
+All the images have the "alt" text.
+
+I tested the website with [Wave](https://wave.webaim.org/) to check if something can be improved in terms of accessibility.
+I used in the website some icons as links (the "scroll down" icons and the social media icons) and this can be a problem for people who use a screen reader.
+Also, I skipped some heading levels: for instance, on the landing page I used "h1" for "Nordic Glamping", and "h3" for "-explore the silence-". Users with screen readers can get confused.
+This is something that I should fix.
+
+### Compatibility Testing
+
+I tested the website on multiple browsers:
+* Chrome
+* Edge 
+* Firefox
+* Internet Explorer
+* Safari
+* Opera
+
+I tested also on multiple devices with Google DevTools.
+
+
 
 
 
