@@ -8,18 +8,18 @@ For the Second Milestone Project with the Code Institute, I have decided to desi
 The final user of the website is a wealthy person who is looking for a different kind of holiday, that combines the strengths of camping (being in contact with nature, outside urban areas) without giving up all the comforts of a 5 stars hotel. The fictional travel agency is specialized in luxury hospitality.
 The website is a single page divided in five sections:
 
-* Landing Page
+### Landing Page
 
 The landing page is very simple. There is a full screen video in the background with a view from above of a Nordic forest. The colours in the video are the same colours used throughout the website. A general feel of silence, open space, calmness, take immediately the user inside the purpose of glamping.
 A title and a subtitle welcome the user, inviting him/her to navigate through the website with the words “explore the silence”. The user can click on this sentence and can go directly to the following section, which is “Glam and camping”, or can scroll down the page and reach the same section.
 A fade in effect drives to user down to the website, with a smooth effect that is in line with the general sense of relax that the user is supposed to experience.
 
-* Glam and Camping
+### Glam and Camping
 
 The second section is an introduction of what the purpose of this kind of holiday is.
 There is a text and a image that briefly summarize both visually and with words what is a luxury camping experience, and for who it is for.
 
-* Map
+### Map
 
 In this section I have used the Google Maps API to display a map with the locations that the travel agency suggests.
 Next to the map a brief description to invite the user to click on the map, or contact directly the agency for a more tailored experience.
@@ -28,7 +28,7 @@ Clicking a second marker makes the first info window close, and opens the relati
 
 ![alt map](assets/images/readme/igloo.png)
 
-* Recommended by
+### Recommended by
 
 This section shows all the sponsors or the magazines that promoted this fictional travel agency and their glamping project.
 The six logos are displayed inside six circles and a text explains who those sponsors are.
@@ -36,14 +36,14 @@ This should convey a sense of reliability and security, so that the user doesn�
 
 ![alt logos of testimonials](assets/images/readme/logos.png)
 
-* Contact    
+### Contact    
 
 The last section is the contact area. 
 There is a contact form where the user can write his/her wishes for a perfect holiday, so the travel agency can contact them with a tailored offer.
 Next to the contact form there is a card showing a picture of the people working in the office, and the contact details such as address, phone number and email.
 The picture of the employees should add more sense of reliability and professionality.
 
-* Footer 
+### Footer 
 
 A footer repeats the contact details, adding the links for the social media pages.
 
@@ -51,10 +51,81 @@ A footer repeats the contact details, adding the links for the social media page
 
 ## User Experience (UX)
 
+
 * Strategy Plane
+
+This site displays only the best selection of locations in the Nordic countries for luxury glamping.
+The purpose of the website is to entice people to choose this kind of vacation and then ask for more information.
+It will also be possible for the user to ask for a tailored holiday experience, which is something that the ideal user is looking after.
+
+According to researches, the majority of users that choose glamping are between 18-50 years old.
+Usually they are people who live in a urban context, earn a medium-high salary, and that don’t want to give up comfort while at the same time enjoying nature.
+The target of the website, however will be the age group 33-50. 
+
+[Source-Grand View Research](https://www.grandviewresearch.com/industry-analysis/glamping-market)
+
+[Source-Forbes](https://www.forbes.com/sites/loisaltermark/2018/08/28/american-glamping-association-launches-to-set-industry-standards-and-manage-customer-expectations/#4d3824d8632a)
+
+The business wants to promote luxury glamping in the Nordic and let people book their holidays.
+Ideally the website is owned by a travel agency.
+
+The user with this website should find easily the best locations in the Nordic countries for high luxury glamping, and crave for more informations.
+
+
+There are a few other websites about glamping in the Nordic countries:
+
+[Glamping Hub](https://glampinghub.com/)
+
+[Glamping-Holiday](https://www.glamping-holiday.com/glamping-sweden-all.html)
+
+They both display a map with the location, with links to information pages.
+
+Glampinghub is very functional, but in my opinion is missing a more exclusive graphic style.
+Glamping-holiday has a very old graphic.
+They both offer the chance to check the availability of the location for a specific date and they both are focused on glamping worldwide.
+
+I think that they are missing a graphic which is more exclusive, but also branding and extra focus.
+
+I want to focus only on the Nordic area, and only the most luxurious glampings: the graphic will also have a Scandinavian luxury feeling.
+
+Images and design will play a very important role, because I want that the user gets the feeling that Nordic Glamping provides something exclusive and unique.
+
+The website should also make clear that this kind of holiday is a solitary one: no other turists too close, not socialization areas, no nightlife. 
+This feature is very important, considering that I am designing this website in the "covid-era": more people now wants to stay away from other people. I will not mention directly this because from a marketing point of view it can be a double-edged sword: not everyone want to associate in the mind sickness with holiday.
+
+Navigation bar and map of the Nordic countries with markers on the locations will provide easily the tools for an easy, clear and fast navigation
+
+The navigation is simple and clear. Javascript will help to deliver an extra touch with smoothness on scroll and adding extra features (Google Maps API, EmailJS).
+The website will also have a clear syntax that allows users with screen readers to navigate easily.
+
+From the point of view of the user, he/she is expecting to have a clear, consistent and professional graphic that allows to have in a glance informations about who is this travel agency, why is it reliable, where are the best locations and what do they offer.
+The user, considering the target that the website aims to, is not interested in saving money, but in having a great experience.
+
+To make the travel agency trustworthy, I will place logos of partners or testimonials in a “recommended by” section.
+
+Google Maps API will help me placing a map with markers and info windows. 
+Info windows will have a picture of the location, the name, and a link to another page where all the detailed informations are written.
+
+The user will then be able to contatc the travel agency through a contact form, or a phone number, or also a e-mail address.
+
+The user can also stay in touch with the agency connecting to their social medias.
+
+The website is really focused on a specific topic and dedicated to a specific target.
+All additions and improvements to this plan should always count towards the goals of the user and/or the business.
+
+
 * Scope Plane
+
+
+
 * Structure Plane
+
+
+
 * Skeleton Plane
+
+
+
 
 ## User stories
 
@@ -144,7 +215,8 @@ Logos have been taken from the web.
 
 ## Wireframes
 
-I used Balsamiq to design the layout.
+I used Balsamiq to design the layout. 
+You can view the document clicking [here](Wireframes/balsamiqWireframe.pdf).
 
 ## Features
 
@@ -255,9 +327,55 @@ I tested further with [Google Test Mobile Friendly](https://search.google.com/te
 ![Result for Google Test Mobile Friendly: ok](assets/images/readme/mobileFriendly.png)
 
 
+---
+
+## Deployment
 
 
+### GitHub Pages
+
+The website has been deployed following these steps:
+* Log in into GitHub;
+* Click on the repository you need to deploy;
+* Go on "Settings";
+* Scroll down the page until you find the "GitHub Pages" section;
+* On "source"click on "none";
+* Select "master branch" from the dropdown menu;
+* The page will re-load automatically;
+* Scroll down again to the same section "GitHub Pages";
+* Now you will find a link that says "Your site is published at ..."
 
 
+### Fork the code
+
+If you need to work on this code on your own, follow these steps:
+* Log in to GitHub;
+* Find the repository you are looking for;
+* On the top-right of the page you will find a button with the name "Fork";
+* Click on it and it will automatically fork the code to your GitHub.
+
+
+### Local Clone
+
+To make a local clone of the site, just follow these stepsg:
+* Log in to your GitHub;
+* Under your repository section, select the repo that you need;
+* You will find a green button with the name "Code". Click on it;
+* On the dropdown selection, you will find a link to clone the code with HHTPS;
+* Now open Git bash;
+* Open the directory where you want to work on the cloned code;
+* Type git clone followed by the link you have previously copied.
+
+Done!
+
+---
+
+## Credits
+
+### Code
+
+### Media
+
+### Acknowledgements
 
 
