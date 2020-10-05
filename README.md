@@ -8,27 +8,27 @@ For the Second Milestone Project with the Code Institute, I have decided to desi
 The final user of the website is a wealthy person who is looking for a different kind of holiday, that combines the strengths of camping (being in contact with nature, outside urban areas) without giving up all the comforts of a 5 stars hotel. The fictional travel agency is specialized in luxury hospitality.
 The website is a single page divided in five sections:
 
-### Landing Page
+### [Landing Page](https://marlene32100.github.io/nordicGlamping/)
 
 The landing page is very simple. There is a full screen video in the background with a view from above of a Nordic forest. The colours in the video are the same colours used throughout the website. A general feel of silence, open space, calmness, take immediately the user inside the purpose of glamping.
 A title and a subtitle welcome the user, inviting him/her to navigate through the website with the words “explore the silence”. The user can click on this sentence and can go directly to the following section, which is “Glam and camping”, or can scroll down the page and reach the same section.
 A fade in effect drives to user down to the website, with a smooth effect that is in line with the general sense of relax that the user is supposed to experience.
 
-### Glam and Camping
+### [Glam and Camping](https://marlene32100.github.io/nordicGlamping/#information-section)
 
 The second section is an introduction of what the purpose of this kind of holiday is.
 There is a text and a image that briefly summarize both visually and with words what is a luxury camping experience, and for who it is for.
 
-### Map
+### [Map](https://marlene32100.github.io/nordicGlamping/#map-section)
 
 In this section I have used the Google Maps API to display a map with the locations that the travel agency suggests.
 Next to the map a brief description to invite the user to click on the map, or contact directly the agency for a more tailored experience.
 The map shows the locations with markers; when the user click on one location, a info window is displayed with a image of the place and its name. Clicking on the window the user is re-directed to the home page of the glamping site on another tab. 
 Clicking a second marker makes the first info window close, and opens the relative info window. In this way, only one information at a time is displayed and the user doesn’t get too much confused.
 
-![alt map](assets/images/readme/igloo.png)
+![alt map](assets/images/readme/map.png)
 
-### Recommended by
+### [About us](https://marlene32100.github.io/nordicGlamping/#recommended-section)
 
 This section shows all the sponsors or the magazines that promoted this fictional travel agency and their glamping project.
 The six logos are displayed inside six circles and a text explains who those sponsors are.
@@ -36,7 +36,7 @@ This should convey a sense of reliability and security, so that the user doesn�
 
 ![alt logos of testimonials](assets/images/readme/logos.png)
 
-### Contact    
+### [Contact](https://marlene32100.github.io/nordicGlamping/#contact-section) 
 
 The last section is the contact area. 
 There is a contact form where the user can write his/her wishes for a perfect holiday, so the travel agency can contact them with a tailored offer.
@@ -130,48 +130,62 @@ As shown from the table above, it will be possible to implement the features A, 
 
 The website will include nice pictures of the accommodation and maybe of the surrounding area, then informations about all those luxury features that Nordic Glamping offers to their customers.
 
-The presentation of the best location will be included, but the chance to book the holiday directly from the website will be left as last thing to implement. That means that maybe this feature will not be available in this release.
+A presentation of the best location will be included in project (at least through info windows on the map), but the chance to book the holiday directly from the website will be left as last thing to implement. That means that maybe this feature will not be available in this release.
 
-The user needs a website that displays the top locations and gives all the info about reliability of the travel agency and extra features that this kind of glamping offers, so that the user dont have to waste time looking for additional informations.
+The travel agency needs a website that expresses its professionality, reliability and trustworthy. The agency wants to gain new clients, but also have a presence on the web.
 
-The user is also expecting to find a website with a modern design and a navigation clear and easy.
+The website must be a clear showcase of their brand, and to achieve this the agency wants a modern design with modern features.
+
+
+* Structure Plane
+
+The website is going to have a single page with different sections: informations, map, about us and contact.
+
+A navigation bar (different for the mobile version and the desktop version) is going to be stuck on the top or on the left side, so that the user can move anytime on a different section without scrolling.
 
 Links will change style on hover, so that a user knows that he/she can click on it for more content.
+
+Links that lead to an external page (such as social medias or locations' websites) are going to open on a new tab, so the user will not lose the Nordic Glamping website.
 
 Scrolling down the page the user will find a arrow icon pointed on the bottom, which can be clicked to reach the following section. The same icon, but pointed to the top, will be placed at the end of the page and it will allow the user to reach immediately the first section without scrolling.
 
 A feedback will guide the user while filling the contact form. If the user write something in a format which is not correct, an alert will pop up remembering the correct format.
 Also, when submitting the form, an alert will let the user know that the form has been correctly sent.
 
-* Structure Plane
-
-
 
 * Skeleton Plane
+
+All the sections will have the same style (same background color, typography, similar percentage of space occupied by content). The design will be consistent and should leave a sense of breathe. Negative space has importance: the website must reflect the wide areas of nordic pristine forests, where nature is queen and silence is king. 
+
+The [wireframes](wireframes/balsamiqWireframe.pdf) show my project.
+
+_Working on the website I realized that it takes too long to design a page for each location: I will add this feature in a future release._
 
 
 * Surface Plane
 
 A source of inspiration for minimal design comes from an article on [UXPlanet](https://uxplanet.org/nordic-ux-what-minimalism-looks-like-scandi-style-6eebbce51d74).
 
+The colour palette is inspired by the nordic forest and the fonts ("Montserrat" and "Nunito Sans") are a great combo to convey the idea of minimal modernity.
 
 
-## User stories
 
-### First Time Visitor Goals
+
+### User stories
+
+#### First Time Visitor Goals
 * As a First Time Visitor, I want to understand what glamping is and what the travel agency offers.
 * As a First Time Visitor, I want to find the best locations for glamping in the Nordic countries.
 * As a First Time Visitor, I want to ask for a tailored experience and get in touch with the travel agency.
-### Returning Visitor Goals
+#### Returning Visitor Goals
 * As a Returning Visitor, I want to find out if there are new locations for glamping.
 * As a Returning Visitor, I want to contact the travel agency.
-### Frequent User Goals
+#### Frequent User Goals
 * As a Frequent User, I want to book my holidays.
 * As a Frequent User, I want to phone or send a e-mail to the agency.                                    
 
----
 
-## Design
+### Design
 
 For this project I decided to use a single page layout, playing with design.
 The goal of the website is to show immediately the brand image of the travel agency and their glamping experience. 
@@ -192,7 +206,7 @@ I have used JQuery to achieve a deeper sense of calmness, using its fadeIn effec
 
 While working on the website, in one section I changed title from "Recommended by" to "About us". However, I left the nomenclature "recommended" in the code because it would take too long to change it all over. This is important to keep in mind if in the future there will be the need to work on the code.
 
-## Colour Scheme
+### Colour Scheme
 
 ![alt palette](assets/images/readme/palette.png)
 
@@ -207,13 +221,13 @@ The background of the website is not white, but it is a shade of light gray. I t
 To help me with the choice of colours I used the website [Color-Hex](https://www.color-hex.com/)
 
 
-## Typography
+### Typography
 
 The font that I used are "Montserrat" and "Nunito Sans". 
 They are very modern and minimal and I think that they are perfect for a design that should remind of the Nordic countries.
 I have played with different heights and letter spacing to add more character to the style.
 
-## Imagery
+### Imagery
 
 For this project I used the full screen video and the final image of the employees from [Pexels](www.pexels.com).
 
@@ -244,12 +258,12 @@ Pictures used for info windows are 400x400px, and logos are 200x200px.
 
 Logos have been taken from the web.
 
-## Wireframes
+### Wireframes
 
 I used Balsamiq to design the layout. 
 You can view the document clicking [here](Wireframes/balsamiqWireframe.pdf).
 
-## Features
+### Features
 
 The website has a clean layout with all the essential informations displayed both on smaller and larger screen.
 There is a navigation bar, a footer with all the links to connect with the travel agency, a contact form, testimonials.
@@ -269,7 +283,7 @@ Considering that the travel agency is supposed to be located in Sweden, someone 
 Other features are an interactive map that displays the best locations for glamping, and that shows in a clean and nice way the image of the location.
 I used Bootstrap cards to customize the info windows, so it looks more consistent with the rest of the website and is also more pleasant to look at.
 
-## Features to implement
+### Features to implement
 
 In the future I would like to add a page for each location. This idea was in my original project, but it takes too much time: I will implement it in a second moment.
 I will show for each locations a carousel of images, more details about the place and its facilities, reviews of other customers.
@@ -319,6 +333,23 @@ Html and Css have been validated with [HTML Validator](https://validator.w3.org/
 
 I used also Jasmine to write tests for the contact form validation. You can view my tests here: [Jasmine Testing Scripts](testing/scripts) and [Jasmine Testing Specs](testing/specs).
 I had to fix further the validation code because when applied to the form didn't perform always as expected. So I added manual testing until the code worked out as I wanted.
+
+In the beginning, I wanted to show a fade in effect when the content was visible in the viewport. To achieve that, I wrote a code that takes as parameter the height of the viewport in relation to the height of the content.
+
+I was expecting the content to fade just once, but it turned out that the content was fading all the time whenever a scroll was detected.
+
+To reach a similar intent without spending too much time, I simply added a JQuery fadeIn effect with a delay; in this way the content now fades in after the first scroll, one after another, from the first section to the last.
+
+It is not what I initially wanted to, but the effect is smooth and nice.
+
+Anyway, I would like to implement the code I had in mind in the beginning on a future release.
+
+
+I had a problem also with info windows. My code opened one info window at a time, but the content displayed inside was always the same repeated for all the locations. Basically, my code took the informations only from the last object in the array "locations".
+
+I asked help to the Tutor Service of Code Institute and Stephen Moody kindly suggested to read the article at this [page](https://www.tutsmake.com/add-show-multiple-markers-pins-on-google-map/). I then created a new variable where I set all the info window contents, so that each content had the same index of the relative location in the variable "locations". At this point, it was easy to link the two.
+
+
 
 ### Usability Testing
 
@@ -405,8 +436,13 @@ Done!
 
 ### Code
 
+
+
 ### Media
+
+Please check the section "Imagery" on this document to find out the sources for pictures and video.
 
 ### Acknowledgements
 
+My mentor Spencer Barriball for his support.
 
