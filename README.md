@@ -114,9 +114,34 @@ The website is really focused on a specific topic and dedicated to a specific ta
 All additions and improvements to this plan should always count towards the goals of the user and/or the business.
 
 
+|   | Opportunity / Problem / Feature   | Importance    | Viability|
+| - | --------------------------------- |:-------------:| --------:|
+| A | Find the locations on map | 5 | 4 |
+| B | Find detailed info about every single location | 5 | 2 |
+| C | Book the holiday directly from the website | 4 | 3 |
+| D | Contact the website owner for info | 5 | 5 |
+| E | Find info about reliability | 5 | 5 |
+|   |  Total | 24 |19 |
+
+As shown from the table above, it will be possible to implement the features A, D and E, but B and C will require more time. The priority will be: E-D-A-B-C.
+
+
 * Scope Plane
 
+The website will include nice pictures of the accommodation and maybe of the surrounding area, then informations about all those luxury features that Nordic Glamping offers to their customers.
 
+The presentation of the best location will be included, but the chance to book the holiday directly from the website will be left as last thing to implement. That means that maybe this feature will not be available in this release.
+
+The user needs a website that displays the top locations and gives all the info about reliability of the travel agency and extra features that this kind of glamping offers, so that the user dont have to waste time looking for additional informations.
+
+The user is also expecting to find a website with a modern design and a navigation clear and easy.
+
+Links will change style on hover, so that a user knows that he/she can click on it for more content.
+
+Scrolling down the page the user will find a arrow icon pointed on the bottom, which can be clicked to reach the following section. The same icon, but pointed to the top, will be placed at the end of the page and it will allow the user to reach immediately the first section without scrolling.
+
+A feedback will guide the user while filling the contact form. If the user write something in a format which is not correct, an alert will pop up remembering the correct format.
+Also, when submitting the form, an alert will let the user know that the form has been correctly sent.
 
 * Structure Plane
 
@@ -124,6 +149,10 @@ All additions and improvements to this plan should always count towards the goal
 
 * Skeleton Plane
 
+
+* Surface Plane
+
+A source of inspiration for minimal design comes from an article on [UXPlanet](https://uxplanet.org/nordic-ux-what-minimalism-looks-like-scandi-style-6eebbce51d74).
 
 
 
@@ -160,6 +189,8 @@ Clicking on the menu, a full screen black opaque overlay is shown with the links
 ![alt menu overlay](assets/images/readme/menuMockup.png)
 
 I have used JQuery to achieve a deeper sense of calmness, using its fadeIn effect on scroll. The content of the website is shown smoothly appearing one after one.
+
+While working on the website, in one section I changed title from "Recommended by" to "About us". However, I left the nomenclature "recommended" in the code because it would take too long to change it all over. This is important to keep in mind if in the future there will be the need to work on the code.
 
 ## Colour Scheme
 

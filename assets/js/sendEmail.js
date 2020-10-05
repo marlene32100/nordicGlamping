@@ -1,12 +1,11 @@
 function sendEmail(contactForm) {
     emailjs.send("gmail", "katia", {
-        "from_optradioMr": contactForm.optradiomr.value,
-        "from_optradioMrs": contactForm.optradiomrs.value,
         "from_name": contactForm.fName.value,
         "from_surname": contactForm.lName.value,
         "from_phone": contactForm.phone.value,
         "from_email": contactForm.email.value,
-        "from_message": contactForm.message.value
+        "from_message": contactForm.message.value,
+        "from_chef": contactForm.chef.value
     })
     .then(
         function(response) {

@@ -152,10 +152,10 @@
       </div>
     </section>
 
-    <!--Recommended by-->
+    <!--About section / Recommended by-->
 
     <section class="section-area" id="recommended-section">
-      <h2 class="heading-title fadeIn">Recommended by</h2>
+      <h2 class="heading-title fadeIn">About us</h2>
       <div class="container-fluid">
         <div class="row section-row recommended-row">
           <div class="col-sm-12 col-lg-4 section-column">
@@ -292,6 +292,8 @@
                   placeholder="Name"
                   onchange="nameValidation(this)"
                 />
+              </div>
+              <div class="form-group">
                 <label for="surname">* Surname</label>
                 <input
                   required
@@ -303,6 +305,8 @@
                   placeholder="Surname"
                   onchange="surnameValidation(this)"
                 />
+              </div>
+              <div class="form-group">
                 <label for="email">* E-mail</label>
                 <input
                   required
@@ -314,6 +318,8 @@
                   placeholder="name@email.com"
                   onchange="emailValidation(this)"
                 />
+              </div>
+                <div class="form-group">
                 <label for="phone">Phone</label>
                 <input
                   type="tel"
@@ -325,6 +331,7 @@
                   onchange="phoneValidation(this)"
                 />
               </div>
+              <div class="form-group">
               <label for="message">* Your dream holiday:</label>
               <textarea
                 required
@@ -335,6 +342,17 @@
                 placeholder="Write your message (at least 70 char)"
                 onchange="messageValidation(this)"
               ></textarea>
+              </div>
+              <div class="form-group">
+              <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="chef" id="chef" name="chef">
+  <label class="form-check-label" for="chef">
+    Select this box if you need a private chef.
+  </label>
+</div>
+              </div>
+
+              
               <small>* Fields are required</small>
 
               <button
