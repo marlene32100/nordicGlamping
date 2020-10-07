@@ -163,6 +163,11 @@ small {
   visibility: hidden;
 }
 
+div.menu-links ul{
+    padding: 0;
+    margin: auto;
+}
+
 li a.link-item {
   font-family: "Nunito Sans", sans-serif;
   color: #e9e6e6;
