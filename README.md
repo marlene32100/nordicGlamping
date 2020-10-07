@@ -291,6 +291,8 @@ It would be nice to add the Booking.com API so that users can book their holiday
 
 I would like also to change the style of the contact form, so that it looks more unique. I will place the label instead of the placeholder, then I will add icons that shows if a field is correctly validated, or not.
 
+One more feature to add is a custom page 404. For instance, if a user write https://marlene32100.github.io/nordicGlamping/contact, a page 404 is displayed because the address is not correct. It would be nice if the page 404 had a graphic consistent with the design of the website and had a link to the home page of the website.
+
 ---
 
 ## Technologies Used
