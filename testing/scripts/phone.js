@@ -1,5 +1,5 @@
 function phoneNumber(phonenumber) {
-    var regExpNumber = /[\d]{10,}/; 
+    var regExpNumber = /[\d]{9,}/; 
     var regExpOther = /\D/;
 
     if (phonenumber.match(regExpOther)){

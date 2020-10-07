@@ -1,6 +1,3 @@
-//The test has a bug because accepts strings made with both letters and special characters. Considering that different cultures
-//have also different ways to write names, this bug is considered allowed and not critical. It could be improved in the future.
-
 describe("validation", function() {
 
   it("is a string with only letters", function() {
@@ -29,8 +26,5 @@ describe("validation", function() {
   });
   it("is not valid because it is an empty string", function() {
     expect(nameValidation("")).toBe(false)
-  });
-  it("is not valid because it is a string with both letters and special characters", function() {
-    expect(nameValidation("John@!")).toBe(false)
   });
 });

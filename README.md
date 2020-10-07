@@ -326,15 +326,21 @@ One more feature to add is a custom page 404. For instance, if a user write http
 All the links have been checked and they all are working.
 
 The form fields have also been checked by me and some testers. The fields are correctly validated and the message is sent properly.
-However, the message I get on my email doesn’t show if the user selected "Mr", "Mrs", or none of them.
-Another problem I found is that the form is submitted also if the message texarea does not fulfill the requirements I wrote on my code (at least 70 char).
+
+A problem I found is that the form is submitted also if the message texarea does not fulfill the requirements I wrote on my code (at least 70 char).
+
 The alert immediately tells the user that he/she should add more details if the text is too short, but the form is submitted anyway.
+
 This will not affect the user experience, but it will affect the owner's side because too many emails can be sent with a text that might be too short.
+
 To prevent this, I added a checkbox which adds one more step before clicking the submitting bottom.
 
 Html and Css have been validated with [HTML Validator](https://validator.w3.org/) and [CSS Validator](https://jigsaw.w3.org/css-validator/).
 
-I used also Jasmine to write tests for the contact form validation. You can view my tests here: [Jasmine Testing Scripts](testing/scripts) and [Jasmine Testing Specs](testing/specs).
+I tested Javascript while compiling using console.log to check if I was coding properly.
+
+I used Jasmine to write tests before coding for the contact form validation. You can view my tests here: [Jasmine Testing Scripts](testing/scripts) and [Jasmine Testing Specs](testing/specs).
+
 I had to fix further the validation code because when applied to the form didn't perform always as expected. So I added manual testing until the code worked out as I wanted.
 
 In the beginning, I wanted to show a fade in effect when the content was visible in the viewport. To achieve that, I wrote a code that takes as parameter the height of the viewport in relation to the height of the content.
@@ -348,7 +354,7 @@ It is not what I initially wanted to, but the effect is smooth and nice.
 Anyway, I would like to implement the code I had in mind in the beginning on a future release.
 
 
-I had a problem also with info windows. My code opened one info window at a time, but the content displayed inside was always the same repeated for all the locations. Basically, my code took the informations only from the last object in the array "locations".
+I had a problem on the map with info windows. My code opened one info window at a time, but the content displayed inside was always the same repeated for all the locations. Basically, my code took the informations only from the last object in the array "locations".
 
 I asked help to the Tutor Service of Code Institute and Stephen Moody kindly suggested to read the article at this [page](https://www.tutsmake.com/add-show-multiple-markers-pins-on-google-map/). I then created a new variable where I set all the info window contents, so that each content had the same index of the relative location in the variable "locations". At this point, it was easy to link the two.
 

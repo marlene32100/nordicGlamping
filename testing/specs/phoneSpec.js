@@ -1,6 +1,3 @@
-//Testing for phone numbers format. Considering that every country has different ways to display a phone number, I decided to 
-//keep the testing only to check if the string has at least 10 digits. Letters or other char are not allowed.
-
 describe ("Validate phone number", function() {
 
     it ("should be a phone number", function(){
