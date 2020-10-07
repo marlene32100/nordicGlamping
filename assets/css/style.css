@@ -214,6 +214,7 @@ span.dot {
 .close-icon {
   color: #e9e6e6;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 a#navbarMenuLink {
