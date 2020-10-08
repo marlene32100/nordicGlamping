@@ -109,6 +109,13 @@ body {
   text-transform: uppercase;
 }
 
+#successfully-submitted{
+    font-family: "Nunito-sans", sans-serif;
+    font-size: 1 rem;
+    color: #304e42;
+    text-transform: uppercase;
+}
+
 .footer-title {
   font-size: 3rem;
 }
@@ -482,6 +489,15 @@ input:focus,
 textarea:focus {
   border: 2px groove #304e42;
   background-color: #79b89f;
+}
+
+#successfully-submitted{
+    display: none;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border: 1px solid #033646;
+    border-radius: 0.5rem;
+    background-color: #ddede7;
 }
 
 /*---------------------------------------------------------------Footer--*/

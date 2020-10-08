@@ -9,7 +9,14 @@ function sendEmail(contactForm) {
     })
     .then(
         function(response) {
-            alert("Thank you for submitting your request. We will take care soon of you.");
+            document.getElementById("name").value="";
+            document.getElementById("surname").value="";
+            document.getElementById("email").value="";
+            document.getElementById("phone").value="";
+            document.getElementById("message").value="";
+            document.getElementById("chef").checked=false;
+            document.getElementById("submit").style.backgroundColor="#F8F9FA";
+            document.getElementById("successfully-submitted").style.display="block";
             console.log("SUCCESS", response);
         },
         function(error) {

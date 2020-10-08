@@ -214,7 +214,7 @@ Colour scheme image designed with [Coolors.com](https://coolors.co/)
 
 The colour palette that I choose reminds of nature and silence. 
 Throughout the website the colours are repeated, so that the user feels comfortable.
-Hovering over links or on the contact form, repeats as well the same colour palette.
+Hovering over links or on the contact form, repeats as well the same colour palette: I used a lighter shade of green as background color for the input fields in the contact form (#ddede7) because I felt that the other shades I have been using were visually too strong when applied on a larger area.
 Basically I took the colour scheme of the video in the landing page and I adapted it to the website.
 The background of the website is not white, but it is a shade of light gray. I think that this solution helps to convey a idea of softness and nature.
 
@@ -279,6 +279,8 @@ Fields such as name/surname and phone number cannot be validate perfectly, since
 To reduce mistakes, I decided to validate name/surname accepting alphabet and special characters: in this way, also letters such as Å, Ä, Ö, just to name a few, can be validated.
 Phone numbers accepts obviously only digits, with a minimum of 9. According to [O'reilly website] (https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s03.html), the shortest phone number in the world has 7 digits.
 Considering that the travel agency is supposed to be located in Sweden, someone who lives in another country and has a phone number of 7 digits is forced to enter also the country prefix (which is usually 2 digits).
+
+When submitting the form, if the message is sent the form is also cleared. I did this adding a code inside the sendEmail.js script.
 
 Other features are an interactive map that displays the best locations for glamping, and that shows in a clean and nice way the image of the location.
 I used Bootstrap cards to customize the info windows, so it looks more consistent with the rest of the website and is also more pleasant to look at.
