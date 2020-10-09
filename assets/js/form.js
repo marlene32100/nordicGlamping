@@ -1,11 +1,12 @@
 function validationForm() {
   function nameValidation(inputtxt) {
     let regExpDigit = /\d/g;
+    // next regex from https://salesforce.stackexchange.com/questions/41153/best-regex-for-first-last-name-validation
     let regExpChar = /^[^±@£$%^&*_+§¡€#¢§¶•ªº«\\/<>?!:;|=.,]$/g;
     let regExpName = /[a-zA-Z]/gi;
 
     if (inputtxt.match(regExpDigit)) {
-      alert("Please use letters to enter your name");
+      alert("Please check your name: no numbers");
       return false;
     } else if (inputtxt.match(regExpChar)) {
       alert("Please use letters to enter your name");

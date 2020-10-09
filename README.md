@@ -52,7 +52,7 @@ A footer repeats the contact details, adding the links for the social media page
 ## User Experience (UX)
 
 
-* Strategy Plane
+* **Strategy Plane**
 
 This site displays only the best selection of locations in the Nordic countries for luxury glamping.
 The purpose of the website is to entice people to choose this kind of vacation and then ask for more information.
@@ -115,18 +115,18 @@ All additions and improvements to this plan should always count towards the goal
 
 
 |   | Opportunity / Problem / Feature   | Importance    | Viability|
-| - | --------------------------------- |:-------------:| --------:|
+| :-: | --------------------------------- |:-------------:| :--------:|
 | A | Find the locations on map | 5 | 4 |
 | B | Find detailed info about every single location | 5 | 2 |
 | C | Book the holiday directly from the website | 4 | 3 |
 | D | Contact the website owner for info | 5 | 5 |
 | E | Find info about reliability | 5 | 5 |
-|   |  Total | 24 |19 |
+|   |  *Total* | *24* | *19* |
 
 As shown from the table above, it will be possible to implement the features A, D and E, but B and C will require more time. The priority will be: E-D-A-B-C.
 
 
-* Scope Plane
+* **Scope Plane**
 
 The website will include nice pictures of the accommodation and maybe of the surrounding area, then informations about all those luxury features that Nordic Glamping offers to their customers.
 
@@ -137,7 +137,7 @@ The travel agency needs a website that expresses its professionality, reliabilit
 The website must be a clear showcase of their brand, and to achieve this the agency wants a modern design with modern features.
 
 
-* Structure Plane
+* **Structure Plane**
 
 The website is going to have a single page with different sections: informations, map, about us and contact.
 
@@ -153,7 +153,7 @@ A feedback will guide the user while filling the contact form. If the user write
 Also, when submitting the form, an alert will let the user know that the form has been correctly sent.
 
 
-* Skeleton Plane
+* **Skeleton Plane**
 
 All the sections will have the same style (same background color, typography, similar percentage of space occupied by content). The design will be consistent and should leave a sense of breathe. Negative space has importance: the website must reflect the wide areas of nordic pristine forests, where nature is queen and silence is king. 
 
@@ -162,7 +162,7 @@ The [wireframes](wireframes/balsamiqWireframe.pdf) show my project.
 _Working on the website I realized that it takes too long to design a page for each location: I will add this feature in a future release._
 
 
-* Surface Plane
+* **Surface Plane**
 
 A source of inspiration for minimal design comes from an article on [UXPlanet](https://uxplanet.org/nordic-ux-what-minimalism-looks-like-scandi-style-6eebbce51d74).
 
@@ -177,9 +177,11 @@ The colour palette is inspired by the nordic forest and the fonts ("Montserrat" 
 * As a First Time Visitor, I want to understand what glamping is and what the travel agency offers.
 * As a First Time Visitor, I want to find the best locations for glamping in the Nordic countries.
 * As a First Time Visitor, I want to ask for a tailored experience and get in touch with the travel agency.
+
 #### Returning Visitor Goals
 * As a Returning Visitor, I want to find out if there are new locations for glamping.
 * As a Returning Visitor, I want to contact the travel agency.
+
 #### Frequent User Goals
 * As a Frequent User, I want to book my holidays.
 * As a Frequent User, I want to phone or send a e-mail to the agency.                                    
@@ -223,7 +225,7 @@ To help me with the choice of colours I used the website [Color-Hex](https://www
 
 ### Typography
 
-The font that I used are "Montserrat" and "Nunito Sans". 
+The font that I used are *"Montserrat"* and *"Nunito Sans"*. 
 They are very modern and minimal and I think that they are perfect for a design that should remind of the Nordic countries.
 I have played with different heights and letter spacing to add more character to the style.
 
@@ -277,7 +279,7 @@ That is the reason why the website is minimal, but at the same time gives all th
 I have used Javascript to validate the contact form; in this way mistakes are reduced and the user is guided throughout the filling.
 Fields such as name/surname and phone number cannot be validate perfectly, since not everyone in the world uses the Latin alphabet or the same way yo write a phone number.
 To reduce mistakes, I decided to validate name/surname accepting alphabet and special characters: in this way, also letters such as Å, Ä, Ö, just to name a few, can be validated.
-Phone numbers accepts obviously only digits, with a minimum of 9. According to [O'reilly website] (https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s03.html), the shortest phone number in the world has 7 digits.
+Phone numbers accepts obviously only digits, with a minimum of 9. According to [O'reilly website](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s03.html), the shortest phone number in the world has 7 digits.
 Considering that the travel agency is supposed to be located in Sweden, someone who lives in another country and has a phone number of 7 digits is forced to enter also the country prefix (which is usually 2 digits).
 
 When submitting the form, if the message is sent the form is also cleared. I did this adding a code inside the sendEmail.js script.
@@ -318,6 +320,9 @@ One more feature to add is a custom page 404. For instance, if a user write http
 * Autoprefixer CSS
 * Google Maps API
 * EmailJS API
+* Jasmine
+* Wave
+* Balsamiq
 
 ---
 
@@ -447,13 +452,17 @@ Done!
 
 ### Code
 
+Regex code `^[^±@£$%^&*_+§¡€#¢§¶•ªº«\\/<>?!:;|=.,]$` to validate names comes from [Salesforce Stackexchange.com](https://salesforce.stackexchange.com/questions/41153/best-regex-for-first-last-name-validation). This is the best way I found to help validating names, considering that not everyone uses a Latin alphabet.
 
+Regex code `/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/` to validate emails comes from [Regexr.com](https://regexr.com/3e48o).
 
 ### Media
 
-Please check the section "Imagery" on this document to find out the sources for pictures and video.
+Please check the section **"Imagery"** on this document to find out the sources for pictures and video.
 
 ### Acknowledgements
 
 My mentor Spencer Barriball for his support.
+
+Stephen Moody from Code Institute for his help.
 
