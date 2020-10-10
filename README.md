@@ -323,6 +323,7 @@ One more feature to add is a custom page 404. For instance, if a user write http
 * Jasmine
 * Wave
 * Balsamiq
+* Favicon.ico
 
 ---
 
@@ -403,6 +404,11 @@ In the future I can resize the images for mobile devices, so it takes less to up
 I tested further with [Google Test Mobile Friendly](https://search.google.com/test/mobile-friendly) and the result was really good. The website performs well on mobile phones.
 
 ![Result for Google Test Mobile Friendly: ok](assets/images/readme/mobileFriendly.png)
+
+
+### Bugs
+
+A known bug is that sometimes scrolling fast to the top of the page, the text "Nordic Glamping - explore the silence" from the landing page section is visible for a few seconds when the screen reaches the "glam and camping" section.
 
 
 ---

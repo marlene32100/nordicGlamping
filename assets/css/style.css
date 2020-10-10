@@ -498,6 +498,7 @@ textarea:focus {
     border: 1px solid #033646;
     border-radius: 0.5rem;
     background-color: #ddede7;
+    width: 100%;
 }
 
 /*---------------------------------------------------------------Footer--*/
@@ -556,6 +557,13 @@ span.link-section {
   .close-icon {
     font-size: 4rem;
   }
+}
+
+@media screen and (min-width: 992px) {
+   p#successfully-submitted {
+       width: 50rem;
+       margin: auto;
+   }
 }
 
 @media screen and (max-width: 1023px) {

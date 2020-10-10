@@ -47,8 +47,8 @@
       </div>
     </div>
 
-    <!--Menu for smaller screens-->
-    <nav class="navbar navbar-custom-small d-lg-none">
+    <!--Menu for smaller screens up to large screen-->
+    <nav class="navbar navbar-custom-small d-xl-none">
       <!--code for dots taken from tutorial at https://www.w3schools.com/howto/howto_css_circles.asp-->
       <div id="dots-container">
         <a href="#menu-expanded">
@@ -59,8 +59,8 @@
       </div>
     </nav>
 
-    <!--Menu for bigger screens-->
-    <nav class="navbar navbar-custom d-none d-lg-block">
+    <!--Menu for larger screens-->
+    <nav class="navbar navbar-custom d-none d-xl-block">
       <a class="nav-link" href="#menu-expanded" id="navbarMenuLink">
         Menu
       </a>
@@ -343,7 +343,9 @@
               </div>
 
               
-              <small>* Fields are required</small>
+              <small>* Fields are required
+              <br>
+              We'll never share your details with anyone else.</small>
 
               <button
                 type="submit"
