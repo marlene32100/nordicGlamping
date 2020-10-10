@@ -370,13 +370,25 @@ I asked help to the Tutor Service of Code Institute and Stephen Moody kindly sug
 
 ### Usability Testing
 
+To test the usability I tried myself the website on multiple devices and using Chrome DevTools, but I also asked my family and the Slack community to view it.
+
 According to people who tested the website, it is easy to navigate and the typography is legible.
+
 All the images have the "alt" text.
 
 I tested the website with [Wave](https://wave.webaim.org/) to check if something can be improved in terms of accessibility.
 I used in the website some icons as links (the "scroll down" icons and the social media icons) and this can be a problem for people who use a screen reader.
-Also, I skipped some heading levels: for instance, on the landing page I used "h1" for "Nordic Glamping", and "h3" for "-explore the silence-". Users with screen readers can get confused.
-This is something that I should fix.
+Screen readers need text as links, not icons.
+The [survey on screen readers 2019](https://webaim.org/projects/screenreadersurvey8/) shows that the majority of people using a screen reader is blind; that means that using icons as links can be a real issue for them.
+However, the sticky navigation bar allows to skip through sections also without clicking on the "scroll" icons.
+It could be a little trickier to find the links for social medias, but before the icons I wrote "connect with us:". This could be a little hint.
+
+Another issue with accessibility is that I skipped some heading levels: for instance, on the landing page I used "h1" for "Nordic Glamping", and "h3" for "-explore the silence-". Users with screen readers can get confused.
+This is something that I will have to fix.
+
+I fixed some issues with responsiveness and ux in the infowindows: on smaller screens they were too big, so I added some media queries to fix that.
+
+Also with the contact form I had some issues displaying nicely between 992 and 1060px, so I added some media queries and fixed the width.
 
 ### Compatibility Testing
 
@@ -404,6 +416,8 @@ In the future I can resize the images for mobile devices, so it takes less to up
 I tested further with [Google Test Mobile Friendly](https://search.google.com/test/mobile-friendly) and the result was really good. The website performs well on mobile phones.
 
 ![Result for Google Test Mobile Friendly: ok](assets/images/readme/mobileFriendly.png)
+
+After testing with Lighthouse in Chrome DevTools, I added rel="noopener" to the external links to improve security.
 
 
 ### Bugs
