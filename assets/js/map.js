@@ -33,7 +33,7 @@ function initMap() {
     },
 
     {
-      title: "Narvik Adventures",
+      title: "Narvik Adventure",
       position: { lat: 68.430937, lng: 17.436482 },
       map: map,
       image: "assets/images/narvik.jpg",
@@ -96,7 +96,7 @@ function initMap() {
       '<a href="' +
         locations[0].url +
         '" target="_blank" class="link-map">' +
-        '<div class="card" style="width: 20rem;">' +
+        '<div class="card infowindow" style="width: 15rem;">' +
         '<img class="card-img-top" src="' +
         locations[0].image +
         '" alt="Card image cap">' +
@@ -112,7 +112,7 @@ function initMap() {
       '<a href="' +
         locations[1].url +
         '" target="_blank" class="link-map">' +
-        '<div class="card" style="width: 20rem;">' +
+        '<div class="card infowindow" style="width: 15rem;">' +
         '<img class="card-img-top" src="' +
         locations[1].image +
         '" alt="Card image cap">' +
@@ -128,7 +128,7 @@ function initMap() {
       '<a href="' +
         locations[2].url +
         '" target="_blank" class="link-map">' +
-        '<div class="card" style="width: 20rem;">' +
+        '<div class="card infowindow" style="width: 15rem;">' +
         '<img class="card-img-top" src="' +
         locations[2].image +
         '" alt="Card image cap">' +
@@ -144,7 +144,7 @@ function initMap() {
       '<a href="' +
         locations[3].url +
         '" target="_blank" class="link-map">' +
-        '<div class="card" style="width: 20rem;">' +
+        '<div class="card infowindow" style="width: 15rem;">' +
         '<img class="card-img-top" src="' +
         locations[3].image +
         '" alt="Card image cap">' +
@@ -160,7 +160,7 @@ function initMap() {
       '<a href="' +
         locations[4].url +
         '" target="_blank" class="link-map">' +
-        '<div class="card" style="width: 20rem;">' +
+        '<div class="card infowindow" style="width: 15rem;">' +
         '<img class="card-img-top" src="' +
         locations[4].image +
         '" alt="Card image cap">' +
@@ -176,7 +176,7 @@ function initMap() {
       '<a href="' +
         locations[5].url +
         '" target="_blank" class="link-map">' +
-        '<div class="card" style="width: 20rem;">' +
+        '<div class="card infowindow" style="width: 15rem;">' +
         '<img class="card-img-top" src="' +
         locations[5].image +
         '" alt="Card image cap">' +
@@ -192,7 +192,7 @@ function initMap() {
       '<a href="' +
         locations[6].url +
         '" target="_blank" class="link-map">' +
-        '<div class="card" style="width: 20rem;">' +
+        '<div class="card infowindow" style="width: 15rem;">' +
         '<img class="card-img-top" src="' +
         locations[6].image +
         '" alt="Card image cap">' +
@@ -208,7 +208,7 @@ function initMap() {
       '<a href="' +
         locations[7].url +
         '" target="_blank" class="link-map">' +
-        '<div class="card" style="width: 20rem;">' +
+        '<div class="card infowindow" style="width: 15rem;">' +
         '<img class="card-img-top" src="' +
         locations[7].image +
         '" alt="Card image cap">' +
@@ -224,7 +224,7 @@ function initMap() {
       '<a href="' +
         locations[8].url +
         '" target="_blank" class="link-map">' +
-        '<div class="card" style="width: 20rem;">' +
+        '<div class="card infowindow" style="width: 15rem;">' +
         '<img class="card-img-top" src="' +
         locations[8].image +
         '" alt="Card image cap">' +
@@ -240,7 +240,7 @@ function initMap() {
       '<a href="' +
         locations[9].url +
         '" target="_blank" class="link-map">' +
-        '<div class="card" style="width: 20rem;">' +
+        '<div class="card infowindow" style="width: 15rem;">' +
         '<img class="card-img-top" src="' +
         locations[9].image +
         '" alt="Card image cap">' +
