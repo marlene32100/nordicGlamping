@@ -247,7 +247,7 @@ The images of the locations in the info window have been taken from those websit
 
 [Torassieppi](https://www.pitchup.com/sv/campsites/finland/lapland/northern_lapland/saariselkae/torassieppi_jerisjaervi/);
 
-[Levin]([https://www.designstack.co/2018/11/glass-igloos-hotel-resort-in-finland.html);
+[Levin](https://www.designstack.co/2018/11/glass-igloos-hotel-resort-in-finland.html);
 
 [Kakslauttanen](https://www.alux.com/wp-content/uploads/2014/03/hotel_kakslauttanen_finlandia_5589_1200x800.jpg);
 
