@@ -26,7 +26,9 @@ Next to the map a brief description to invite the user to click on the map, or c
 The map shows the locations with markers; when the user click on one location, a info window is displayed with a image of the place and its name. Clicking on the window the user is re-directed to the home page of the glamping site on another tab. 
 Clicking a second marker makes the first info window close, and opens the relative info window. In this way, only one information at a time is displayed and the user doesn’t get too much confused.
 
-![alt map](assets/images/readme/map.png)
+|     |     |
+| --- | --- |
+| ![alt map](assets/images/readme/map.png) | ![alt map mobile](assets/images/readme/mapMobile.png) |
 
 ### [About us](https://marlene32100.github.io/nordicGlamping/#recommended-section)
 
@@ -34,7 +36,7 @@ This section shows all the sponsors or the magazines that promoted this fictiona
 The six logos are displayed inside six circles and a text explains who those sponsors are.
 This should convey a sense of reliability and security, so that the user doesn’t feel afraid to book a holiday with them.
 
-![alt logos of testimonials](assets/images/readme/logos.png)
+![alt logos of testimonials](assets/images/readme/aboutUs.png)
 
 ### [Contact](https://marlene32100.github.io/nordicGlamping/#contact-section) 
 
