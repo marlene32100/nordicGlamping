@@ -255,7 +255,7 @@ The images of the locations in the info window have been taken from those websit
 
 
 
-To avoid the website being too heavy to load, I used the website [Resize Image](https://resizeimage.net/) to crop and resize images.
+To avoid the website being too heavy to load, I used the website [Resize Image](https://resizeimage.net/) and [PicResize](https://picresize.com/) to crop and resize images.
 Pictures used for info windows are 400x400px, and logos are 200x200px.
 
 Logos have been taken from the web.
@@ -391,6 +391,39 @@ I fixed some issues with responsiveness and ux in the infowindows: on smaller sc
 
 Also with the contact form I had some issues displaying nicely between 992 and 1060px, so I added some media queries and fixed the width.
 
+#### First Time Visitor Testing
+* As a First Time Visitor, I want to understand what glamping is and what the travel agency offers.
+  
+  The user lands on the landing page and can choose between three option: scrolling down, clicking on the menu, or clicking on "explore the silence". 
+  He/she can easily get the main informations scrolling down the page, starting from the first introductive section ("Glam and camping"), then "Locations", then "About us" where the user can find testimonials and sponsors, and finally "contact".
+
+* As a First Time Visitor, I want to find the best locations for glamping in the Nordic countries.
+
+  The user can scroll down the menu until he/she reaches "locations". Here the user can interact with the map. He/she can click on the markers and get a basic idea of what the locations are.
+  If he/she is interested in getting more details, can easily click on the info window and can be re-direct to the location's website.
+
+* As a First Time Visitor, I want to ask for a tailored experience and get in touch with the travel agency.
+
+  The user can scroll down the page until reaches the "Contact" section. Here he/she can fill out the contact form. Alternatively, he/she can find the phone number or the email address on the same section.
+  Contact informations are repeated in the footer, where there are also links to the travel agency's social medias. The links open in a new tab.
+
+#### Returning Visitor Testing
+* As a Returning Visitor, I want to find out if there are new locations for glamping.
+
+  The user can click on the menu, select "locations" and look at the map.
+
+* As a Returning Visitor, I want to contact the travel agency.
+
+  The user can click on the menu, select "contact" and choose whether to write a message on the contact form, or send them a email, or make a phone call. 
+  In case the user decides to make a phone call, clicking on the phone number a phone call is automatically started on the mobile.
+  As well, clicking on the email address, a mail window is launched.
+
+#### Frequent User Testing
+* As a Frequent User, I want to book my holidays.
+* As a Frequent User, I want to phone or send a e-mail to the agency. 
+
+  In both those cases, the user will directly go to the "contact" section and choose his/her favourite way to contact the agency.
+
 ### Compatibility Testing
 
 I tested the website on multiple browsers:
@@ -401,16 +434,15 @@ I tested the website on multiple browsers:
 * Safari
 * Opera
 
-I tested also on multiple devices with Google DevTools.
+I tested also on multiple devices with Google DevTools, AmIResponsive, on iPhone 7plus and extra-large desktop.
 
 ### Performance Testing
 
 I tested the website with [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) and the result was very good for desktop devices, a little less for mobiles.
 
-
-![PageSpeed results for desktop: 98%](assets/images/readme/speedDesktop.png)
-
-![PageSpeed results for mobile: 80%](assets/images/readme/speedMobile.png)
+| Mobile PageSpeed results | Desktop PageSpeed results |
+| --- | --- |
+| ![PageSpeed results for desktop: 98%](assets/images/readme/speedDesktop.png) | ![PageSpeed results for mobile: 83%](assets/images/readme/mobileSpeed.png) |
 
 In the future I can resize the images for mobile devices, so it takes less to upload.
 
@@ -418,7 +450,16 @@ I tested further with [Google Test Mobile Friendly](https://search.google.com/te
 
 ![Result for Google Test Mobile Friendly: ok](assets/images/readme/mobileFriendly.png)
 
-After testing with Lighthouse in Chrome DevTools, I added rel="noopener" to the external links to improve security.
+After testing with Lighthouse in Chrome DevTools, I added rel="noopener" to the external links to improve security, added some meta tags and resized a image. There are still a few things to fix, but generally speaking the website renders well both on mobile and desktop.
+
+One problem with performance is the use of third-party code, such as Bootstrap and Google Maps API. Itslows down the loading especially on mobile.
+
+The results with [Lighthouse](https://developers.google.com/web/tools/lighthouse) are:
+
+| Mobile Lightouse results | Desktop Lightouse results |
+| ------ | ------- |
+| ![Lightouse results for mobile](assets/images/readme/mobileLighthouse.png) | ![Lightouse results for desktop](assets/images/readme/desktopLighthouse.png)
+
 
 
 ### Bugs
@@ -488,4 +529,6 @@ Please check the section **"Imagery"** on this document to find out the sources 
 My mentor Spencer Barriball for his support.
 
 Stephen Moody from Code Institute for his help.
+
+
 
