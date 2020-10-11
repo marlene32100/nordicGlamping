@@ -316,6 +316,7 @@ One more feature to add is a custom page 404. For instance, if a user write http
 * GitHub
 * GitPod
 * Chrome DevTools
+* Lighthouse
 * Techsini mockup generator
 * Autoprefixer CSS
 * Google Maps API
@@ -423,6 +424,8 @@ After testing with Lighthouse in Chrome DevTools, I added rel="noopener" to the 
 ### Bugs
 
 A known bug is that sometimes scrolling fast to the top of the page, the text "Nordic Glamping - explore the silence" from the landing page section is visible for a few seconds when the screen reaches the "glam and camping" section.
+
+The contact form does not fade in on scroll.
 
 
 ---
