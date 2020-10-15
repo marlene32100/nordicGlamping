@@ -1,6 +1,6 @@
 function messageValidation(inputtxt) {
 
-   var regExText = /\D{70,}/;
+   var regExText = /\D{40,}/;
 
    if (regExText.test(document.contactForm.message.value) == false){
    alert("Please add more details to your message: we will help you better");

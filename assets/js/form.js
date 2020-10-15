@@ -36,7 +36,7 @@ function validationForm() {
   }
 
   function validationText(text) {
-    let regExText = /\D{70,}/;
+    let regExText = /\D{40,}/;
     return regExText.test(text);
   }
 

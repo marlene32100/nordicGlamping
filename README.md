@@ -24,7 +24,7 @@ There is a text and a image that briefly summarize both visually and with words 
 In this section I have used the Google Maps API to display a map with the locations that the travel agency suggests.
 Next to the map a brief description to invite the user to click on the map, or contact directly the agency for a more tailored experience.
 The map shows the locations with markers; when the user click on one location, a info window is displayed with a image of the place and its name. Clicking on the window the user is re-directed to the home page of the glamping site on another tab. 
-Clicking a second marker makes the first info window close, and opens the relative info window. In this way, only one information at a time is displayed and the user doesn’t get too much confused.
+Clicking a second marker makes the first info window close, and opens the relative info window. In this way, only one information at a time is displayed and the user doesn’t get too confused.
 
 |     |     |
 | --- | --- |
@@ -103,7 +103,7 @@ The website will also have a clear syntax that allows users with screen readers 
 From the point of view of the user, he/she is expecting to have a clear, consistent and professional graphic that allows to have in a glance informations about who is this travel agency, why is it reliable, where are the best locations and what do they offer.
 The user, considering the target that the website aims to, is not interested in saving money, but in having a great experience.
 
-To make the travel agency trustworthy, I will place logos of partners or testimonials in a “recommended by” section.
+To make the travel agency trustworthy, I will place logos of partners or testimonials in a “about us” section.
 
 Google Maps API will help me placing a map with markers and info windows. 
 Info windows will have a picture of the location, the name, and a link to another page where all the detailed informations are written.
@@ -159,7 +159,7 @@ Also, when submitting the form, an alert will let the user know that the form ha
 
 All the sections will have the same style (same background color, typography, similar percentage of space occupied by content). The design will be consistent and should leave a sense of breathe. Negative space has importance: the website must reflect the wide areas of nordic pristine forests, where nature is queen and silence is king. 
 
-The [wireframes](wireframes/balsamiqWireframe.pdf) show my project.
+The [wireframe for desktop](wireframes/balsamiqWireframe.pdf) and [wireframe for mobile](wireframes/mobileWireframe.pdf) show my project.
 
 _Working on the website I realized that it takes too long to design a page for each location: I will add this feature in a future release._
 
@@ -265,7 +265,7 @@ Logos have been taken from the web.
 ### Wireframes
 
 I used Balsamiq to design the layout. 
-You can view the document clicking [here](Wireframes/balsamiqWireframe.pdf).
+You can view the document for the mobile version clicking [here](wireframes/mobileWireframe.pdf) and the one for the desktop version [here](wireframes/balsamiqWireframe.pdf).
 
 ### Features
 
@@ -338,13 +338,9 @@ All the links have been checked and they all are working.
 
 The form fields have also been checked by me and some testers. The fields are correctly validated and the message is sent properly.
 
-A problem I found is that the form is submitted also if the message texarea does not fulfill the requirements I wrote on my code (at least 70 char).
+A problem I found is that the form is submitted also if the message texarea does not fulfill the requirements I wrote on my code (at least 40 char).
 
-The alert immediately tells the user that he/she should add more details if the text is too short, but the form is submitted anyway.
-
-This will not affect the user experience, but it will affect the owner's side because too many emails can be sent with a text that might be too short.
-
-To prevent this, I added a checkbox which adds one more step before clicking the submitting bottom.
+The alert immediately tells the user that he/she should add more details if the text is too short, but if the user clicks again on the "submit" button, the form is submitted anyway.
 
 Html and Css have been validated with [HTML Validator](https://validator.w3.org/) and [CSS Validator](https://jigsaw.w3.org/css-validator/).
 
@@ -358,7 +354,7 @@ In the beginning, I wanted to show a fade in effect when the content was visible
 
 I was expecting the content to fade just once, but it turned out that the content was fading all the time whenever a scroll was detected.
 
-To reach a similar intent without spending too much time, I simply added a JQuery fadeIn effect with a delay; in this way the content now fades in after the first scroll, one after another, from the first section to the last.
+To reach a similar intent without spending too much time fixing the code, I simply added a JQuery fadeIn effect with a delay; in this way the content now fades in after the first scroll, one after another, from the first section to the last.
 
 It is not what I initially wanted to, but the effect is smooth and nice.
 
@@ -469,6 +465,8 @@ The results with [Lighthouse](https://developers.google.com/web/tools/lighthouse
 A known bug is that sometimes scrolling fast to the top of the page, the text "Nordic Glamping - explore the silence" from the landing page section is visible for a few seconds when the screen reaches the "glam and camping" section.
 
 The contact form does not fade in on scroll.
+
+It is possible to send the contact form without fulfilling the requirement for 40 char by clicking twice on the "submit" button. This should be fixed, even if it does not affect the user experience.
 
 
 ---
