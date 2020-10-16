@@ -342,11 +342,19 @@ A problem I found is that the form is submitted also if the message texarea does
 
 The alert immediately tells the user that he/she should add more details if the text is too short, but if the user clicks again on the "submit" button, the form is submitted anyway.
 
+![alt example of validation](assets/images/readme/validation.png)
+
+When submitted, the form returns a message on the website, so the user knows that everything went well. The form gets also cleared.
+
+![alt submitted form](assets/images/readme/submittedForm.png)
+
 Html and Css have been validated with [HTML Validator](https://validator.w3.org/) and [CSS Validator](https://jigsaw.w3.org/css-validator/).
 
 I tested Javascript while compiling using console.log to check if I was coding properly.
 
 I used Jasmine to write tests before coding for the contact form validation. You can view my tests here: [Jasmine Testing Scripts](testing/scripts) and [Jasmine Testing Specs](testing/specs).
+
+![alt validation result with Jasmine](assets/images/readme/jasmine.png)
 
 I had to fix further the validation code because when applied to the form didn't perform always as expected. So I added manual testing until the code worked out as I wanted.
 
