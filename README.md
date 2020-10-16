@@ -530,5 +530,9 @@ My mentor Spencer Barriball for his support.
 
 Stephen Moody from Code Institute for his help.
 
+Text for the second paragraph on "About us" section comes from [World Luxury hospitality](http://www.worldluxuryhospitality.com).
+
+The script loader order for EmailJS API comes from the relative lesson from the [Code Institute](https://codeinstitute.net/).
+
 
 
