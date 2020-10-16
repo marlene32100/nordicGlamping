@@ -109,11 +109,11 @@ body {
   text-transform: uppercase;
 }
 
-#successfully-submitted{
-    font-family: "Nunito-sans", sans-serif;
-    font-size: 1rem;
-    color: #304e42;
-    text-transform: uppercase;
+#successfully-submitted {
+  font-family: "Nunito-sans", sans-serif;
+  font-size: 1rem;
+  color: #304e42;
+  text-transform: uppercase;
 }
 
 .footer-title {
@@ -170,9 +170,9 @@ small {
   visibility: hidden;
 }
 
-div.menu-links ul{
-    padding: 0;
-    margin: auto;
+div.menu-links ul {
+  padding: 0;
+  margin: auto;
 }
 
 li a.link-item {
@@ -371,7 +371,6 @@ div#map {
   border: 1px solid #79b89f;
 }
 
-
 /*---------------------------------------------------------------About us/Recommended by section--*/
 
 .image-recommended {
@@ -492,14 +491,14 @@ textarea:focus {
   background-color: #79b89f;
 }
 
-#successfully-submitted{
-    display: none;
-    margin-bottom: 2rem;
-    padding: 0.5rem;
-    border: 1px solid #033646;
-    border-radius: 0.5rem;
-    background-color: #ddede7;
-    width: 100%;
+#successfully-submitted {
+  display: none;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border: 1px solid #033646;
+  border-radius: 0.5rem;
+  background-color: #ddede7;
+  width: 100%;
 }
 
 /*---------------------------------------------------------------Footer--*/
@@ -558,29 +557,27 @@ span.link-section {
   .close-icon {
     font-size: 4rem;
   }
-
 }
 
 @media screen and (min-width: 1060px) {
-
-    .contact-form {
-      width: 50rem;
+  .contact-form {
+    width: 50rem;
   }
 
-   p#successfully-submitted {
-       width: 50rem;
-       margin: auto;
-   }
+  p#successfully-submitted {
+    width: 50rem;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 576px) {
-    .infowindow {
-        width: 20rem;
-    }
+  .infowindow {
+    width: 20rem;
+  }
 
-    .map-title {
-        font-size: 2rem;
-    }
+  .map-title {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 1023px) {

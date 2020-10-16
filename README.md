@@ -440,7 +440,7 @@ I tested the website on multiple browsers:
 * Safari
 * Opera
 
-I tested also on multiple devices with Google DevTools, AmIResponsive, on iPhone 7plus and extra-large desktop.
+I tested also on multiple devices with Google DevTools, AmIResponsive, on iPhone 11 and extra-large desktop.
 
 ### Performance Testing
 
